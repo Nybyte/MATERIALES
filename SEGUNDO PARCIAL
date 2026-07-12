@@ -1,0 +1,507 @@
+# Problemas de Examen Segundo Parcial
+
+## Índice
+* [Ejercicio 1: Nucleación Homogénea del Cobre y Átomos en Núcleo Crítico](#ejercicio-1)
+* [Ejercicio 2: Ensayo de Tracción en Probeta de Aluminio](#ejercicio-2)
+* [Ejercicio 3: Composición de Acero Hipereutectoide y Dosificación de Cementita](#ejercicio-3)
+
+---
+
+## Conceptos Clave
+
+* **Nucleación**:
+  - Radio r*:
+    $$r^* = \frac{2 \cdot \gamma \cdot T_m}{\Delta H_f \cdot \Delta T}$$
+  - Volumen V*:
+    $$V^* = \frac{4}{3} \cdot \pi \cdot (r^*)^3$$
+  - Nº átomos:
+    $$\text{Nº at} = V^* \cdot \frac{n}{V_c}$$
+* **Tracción**:
+  - Sección:
+    $$A = \frac{\pi \cdot d^2}{4}$$
+  - Tensión:
+    $$\sigma = \frac{F}{A}$$
+  - Deformac.:
+    $$\varepsilon = \frac{\Delta L}{L_0}$$
+  - Young (Hooke):
+    $$\sigma = E \cdot \varepsilon$$
+  - Alargam.:
+    $$\%AR = \frac{L - L_0}{L_0} \cdot 100$$
+  - Estricción:
+    $$\%Z = \frac{A_0 - A_f}{A_0} \cdot 100$$
+* **Aceros**:
+  - Palanca C:
+    $$W_{\alpha} = \frac{6,67 - \%C}{6,67}$$
+  - Mezcla Fe3C:
+    $$\frac{0,0667 \cdot m}{m_{Fe} + m} = \%C_{global}$$
+
+---
+
+## Ejercicio 1
+
+### Enunciado
+Transcription:
+Problema 1
+(2 puntos)
+Calcule el
+tamaño del
+radio crítico y
+el número de
+átomos en el
+núcleo crítico
+cuando se forma
+Cu sólido por
+nucleación
+homogénea.
+Datos:
+Temperatura de
+fusión =
+1085 °C;
+Subenfriamiento
+típico =
+236 °C;
+Energía
+superficial =
+177*10^-7
+J/cm2;
+Calor latente
+de fusión =
+1628 J/cm3;
+a(Cu FCC) =
+0,3615 nm.
+
+### Solución Paso a Paso
+
+#### Paso 1:
+Cálculo del
+Radio Crítico:
+Fórmula:
+$$r^* = \frac{2 \cdot \gamma \cdot T_m}{\Delta H_f \cdot \Delta T}$$
+
+1. Datos:
+- Energía libre
+  superficial:
+$$\gamma = 177 \cdot 10^{-7}$$
+Unidad:
+$$\text{J/cm}^2$$
+- Temperatura
+  de fusión:
+$$T_m = 1085 + 273,15$$
+$$T_m = 1358,15$$
+Unidad:
+$$\text{K}$$
+- Calor latente
+  de fusión:
+$$\Delta H_f = 1628$$
+Unidad:
+$$\text{J/cm}^3$$
+- Subenfria-
+  miento:
+$$\Delta T = 236$$
+Unidad:
+$$\text{K}$$
+
+2. Sustitución:
+$$r^* = \frac{2 \cdot 177 \cdot 10^{-7} \cdot 1358,15}{1628 \cdot 236}$$
+$$r^* = \frac{0,0480785}{384208}$$
+$$r^* \approx 1,2514 \cdot 10^{-7}$$
+Unidad:
+$$\text{cm}$$
+Convertimos a
+nanómetros:
+$$r^* = 1,2514 \cdot 10^{-7} \cdot 10^7$$
+$$r^* = 1,2514$$
+Unidad:
+$$\text{nm}$$
+
+#### Paso 2:
+Volumen del
+Núcleo Crítico:
+Fórmula de la
+esfera:
+$$V^* = \frac{4}{3} \cdot \pi \cdot (r^*)^3$$
+Sustituimos el
+radio crítico:
+$$V^* = \frac{4}{3} \cdot \pi \cdot (1,2514)^3$$
+$$V^* \approx 8,2093$$
+Unidad:
+$$\text{nm}^3$$
+
+#### Paso 3:
+Número de
+átomos en el
+núcleo crítico:
+
+1. Volumen de
+la celda:
+Estructura FCC:
+$$a = 0,3615$$
+Unidad:
+$$\text{nm}$$
+Volumen:
+$$V_c = a^3$$
+$$V_c = (0,3615)^3$$
+$$V_c \approx 0,04724$$
+Unidad:
+$$\text{nm}^3$$
+
+2. Átomos por
+celda unidad:
+En estructura
+tipo FCC:
+$$n = 4$$
+
+3. Densidad
+atómica
+volumétrica:
+$$\rho_{\text{at}} = \frac{n}{V_c}$$
+$$\rho_{\text{at}} = \frac{4}{0,04724}$$
+$$\rho_{\text{at}} \approx 84,674$$
+Unidad:
+$$\text{atomos/nm}^3$$
+
+4. Moles o
+número de
+átomos:
+$$\text{Nº at} = V^* \cdot \rho_{\text{at}}$$
+$$\text{Nº at} = 8,2093 \cdot 84,674$$
+$$\text{Nº at} \approx 695,1$$
+Unidad:
+$$\text{atomos}$$
+
+---
+
+## Ejercicio 2
+
+### Enunciado
+Transcription:
+Problema 3
+(2 puntos)
+Un ensayo de
+tracción de una
+probeta de
+aluminio
+cilíndrica, de
+longitud
+calibrada
+L0 = 6,00 cm y
+diámetro
+d0 = 1,25 cm,
+muestra en el
+límite elástico
+el registro:
+F = 31,8 kN;
+dLe = 0,0175 cm.
+Después del
+ensayo, la
+distancia entre
+las marcas y el
+diámetro de la
+superficie de
+fractura son
+L = 6,65 cm y
+df = 1,05 cm
+respectiva-
+mente. Calcular:
+a. (0,5 puntos)
+Límite elástico.
+b. (0,5 puntos)
+Módulo de
+elasticidad.
+c. (0,5 puntos)
+Ductilidad de
+la aleación
+medida de dos
+formas
+diferentes.
+d. (0,5 puntos)
+Longitud de una
+barra de 125 cm
+a la que se
+aplica una
+tensión de
+200 MPa.
+
+### Solución Paso a Paso
+
+#### Paso previo:
+Cálculo de áreas
+inicial y
+final:
+Diámetro inicial:
+$$d_0 = 12,5$$
+Unidad:
+$$\text{mm}$$
+Sección inicial:
+$$A_0 = \frac{\pi \cdot d_0^2}{4}$$
+$$A_0 = \frac{\pi \cdot 12,5^2}{4}$$
+$$A_0 \approx 122,718$$
+Unidad:
+$$\text{mm}^2$$
+Diámetro final:
+$$d_f = 10,5$$
+Unidad:
+$$\text{mm}$$
+Sección final:
+$$A_f = \frac{\pi \cdot d_f^2}{4}$$
+$$A_f = \frac{\pi \cdot 10,5^2}{4}$$
+$$A_f \approx 86,590$$
+Unidad:
+$$\text{mm}^2$$
+
+#### Apartado a)
+
+Límite elástico:
+Fuerza:
+$$F = 31800$$
+Unidad:
+$$\text{N}$$
+Tensión elástica:
+$$\sigma_y = \frac{F}{A_0}$$
+$$\sigma_y = \frac{31800}{122,718}$$
+$$\sigma_y \approx 259,13$$
+Unidad:
+$$\text{MPa}$$
+
+#### Apartado b)
+
+Módulo de
+elasticidad (E):
+Deformación
+elástica unit.:
+$$\varepsilon = \frac{\Delta L_e}{L_0}$$
+$$\varepsilon = \frac{0,0175}{6,00}$$
+$$\varepsilon \approx 0,002917$$
+Módulo de Young:
+$$E = \frac{\sigma_y}{\varepsilon}$$
+$$E = \frac{259,13}{0,002917}$$
+$$E \approx 88834,4$$
+Unidad:
+$$\text{MPa}$$
+$$E \approx 88,83$$
+Unidad:
+$$\text{GPa}$$
+
+#### Apartado c)
+
+Ductilidad:
+Forma 1:
+Porcentaje de
+alargamiento:
+$$\%AR = \frac{L - L_0}{L_0} \cdot 100$$
+$$\%AR = \frac{6,65 - 6,00}{6,00} \cdot 100$$
+$$\%AR \approx 10,83\%$$
+Forma 2:
+Porcentaje de
+estricción:
+$$\%Z = \frac{A_0 - A_f}{A_0} \cdot 100$$
+$$\%Z = \frac{122,718 - 86,590}{122,718} \cdot 100$$
+$$\%Z \approx 29,44\%$$
+
+#### Apartado d)
+
+Longitud final:
+Tensión
+aplicada:
+$$\sigma = 200$$
+Unidad:
+$$\text{MPa}$$
+Como
+$$200 < 259,13$$
+es régimen
+elástico.
+Deformación:
+$$\varepsilon = \frac{\sigma}{E}$$
+$$\varepsilon = \frac{200}{88834,4}$$
+$$\varepsilon \approx 0,002251$$
+Longitud
+original:
+$$L_i = 125$$
+Unidad:
+$$\text{cm}$$
+Longitud final:
+$$L_f = L_i \cdot (1 + \varepsilon)$$
+$$L_f = 125 \cdot (1 + 0,002251)$$
+$$L_f \approx 125,28$$
+Unidad:
+$$\text{cm}$$
+
+---
+
+## Ejercicio 3
+
+### Enunciado
+Transcription:
+Problema 4
+(4 puntos)
+Una pieza de
+acero al carbono
+tiene a
+temperatura
+ambiente un
+86 % en masa de
+ferrita.
+a. (1 punto)
+Dibuje el
+diagrama de
+fases de
+equilibrio del
+sistema Fe-Fe3C
+considerando
+que las líneas
+son rectas,
+indicando sobre
+el mismo las
+fases y
+temperaturas
+importantes.
+b. (1,5 puntos)
+Determine la
+composición de
+la pieza de
+acero expresada
+en porcentaje
+en masa e
+indique el tipo
+de acero.
+c. (1,5 puntos)
+Si se desea
+usar en la
+fabricación de
+la pieza 20 kg
+de Fe ¿qué
+cantidad habrá
+que emplear de
+Fe3C?
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+Descripción del
+diagrama de
+fases
+simplificado:
+1. Eje vertical:
+Temperatura.
+2. Eje horiz.:
+Composición
+de 0 a
+$$6,67\%$$
+de C.
+Puntos clave:
+- Eutectoide:
+A
+$$727$$
+Unidad:
+$$\text{^{\circ}C}$$
+y
+$$0,77\%$$
+de C. Reacción:
+$$\gamma \rightarrow \alpha + \text{Fe}_3\text{C}$$
+- Eutéctico:
+A
+$$1148$$
+Unidad:
+$$\text{^{\circ}C}$$
+y
+$$4,3\%$$
+de C.
+Límites:
+- Ferrita
+  (alpha):
+Extremo izq,
+máximo
+$$0,022\%$$
+de C a
+$$727$$
+Unidad:
+$$\text{^{\circ}C}$$
+y
+$$0\%$$
+a temp.
+ambiente.
+- Austenita
+  (gamma):
+Región central
+superior,
+máximo
+$$2,11\%$$
+de C a
+$$1148$$
+Unidad:
+$$\text{^{\circ}C}$$
+- Cementita:
+Línea vertical
+en
+$$6,67\%$$
+de C.
+
+#### Apartado b)
+
+A temperatura
+ambiente, las
+fases en
+equilibrio son
+ferrita (alpha)
+y cementita.
+Solubilidad:
+$$C_{\alpha} \approx 0\%$$
+de C.
+$$C_{Fe_3C} = 6,67\%$$
+de C.
+
+1. Cálculo de la
+composición:
+Fórmula:
+$$W_{\alpha} = \frac{6,67 - \%C}{6,67 - 0}$$
+Sustituyendo
+$$W_{\alpha} = 0,86$$:
+$$0,86 = \frac{6,67 - \%C}{6,67}$$
+$$0,86 \cdot 6,67 = 6,67 - \%C$$
+$$5,7362 = 6,67 - \%C$$
+$$\%C = 6,67 - 5,7362$$
+$$\%C \approx 0,9338\%$$
+
+2. Tipo de
+acero:
+- Al estar
+entre
+$$0,022\%$$
+y
+$$2,11\%$$
+es un acero.
+- Como
+$$0,9338\% > 0,77\%$$
+(eutectoide),
+se clasifica
+como acero
+hipereutectoide.
+
+#### Apartado c)
+
+Masa de Fe:
+$$m_{Fe} = 20$$
+Unidad:
+$$\text{kg}$$
+Sea
+$$m$$
+la masa de
+cementita a
+añadir.
+Masa total:
+$$m_{tot} = 20 + m$$
+Masa de C en
+la mezcla:
+$$m_C = 0,0667 \cdot m$$
+Igualamos a la
+composición:
+$$\frac{0,0667 \cdot m}{20 + m} = 0,009338$$
+$$0,0667 \cdot m = 0,009338 \cdot (20 + m)$$
+$$0,0667 \cdot m = 0,18676 + 0,009338 \cdot m$$
+$$(0,0667 - 0,009338) \cdot m = 0,18676$$
+$$0,057362 \cdot m = 0,18676$$
+$$m = \frac{0,18676}{0,057362}$$
+$$m \approx 3,256$$
+Unidad:
+$$\text{kg}$$
