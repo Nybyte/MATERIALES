@@ -1,0 +1,781 @@
+# Cuadernillo Tema 4 Polímeros
+
+## Índice
+* [Ejercicio 1: Mezcla de Polietileno con Diferentes Grados de Polimerización](#ejercicio-1)
+* [Ejercicio 2: Peso Molecular Medio y Grados de Polimerización en PTFE](#ejercicio-2)
+* [Ejercicio 3: Masa de Mero y Distribución en Poliacetato de Vinilo](#ejercicio-3)
+* [Ejercicio 4: Fracción de Cristalinidad en Muestras de Polietileno](#ejercicio-4)
+* [Ejercicio 5: Copolímero Isopreno-Butadieno y Grado de Vulcanización](#ejercicio-5)
+* [Ejercicio 6: Masa de Monómeros Requeridos para Obtener Nailon-6,6](#ejercicio-6)
+* [Ejercicio 7: Determinación de la Densidad y Tipo de Polietileno en Film](#ejercicio-7)
+
+---
+
+## Conceptos Clave
+
+* **Polímeros**:
+  - Peso Mn:
+    $$\bar{M}_n = \frac{\sum w_i}{\sum n_i}$$
+  - Peso Mw:
+    $$\bar{M}_w = \sum x_i \cdot M_i$$
+  - Polidisp.:
+    $$IP = \frac{\bar{M}_w}{\bar{M}_n}$$
+  - Cristalin.:
+    $$\frac{X}{100} = \frac{\rho_c \cdot (\rho - \rho_a)}{\rho \cdot (\rho_c - \rho_a)}$$
+  - Cancelación:
+    $$\frac{X_I \cdot \rho_I}{X_{II} \cdot \rho_{II}} = \frac{\rho_I - \rho_a}{\rho_{II} - \rho_a}$$
+  - Vulcanización:
+    $$\%\text{ Enlaces} = \frac{2 \cdot n_S}{n_{db}} \cdot 100$$
+
+---
+
+## Ejercicio 1
+
+### Enunciado
+Transcription:
+Ejercicio
+resuelto 4.2
+Calcule la
+masa molecular
+promedio en
+número, Mn, y
+en masa, Mw, de
+una mezcla de
+polietileno
+formada por
+1 g con un
+grado de
+polimerización
+(n) de 5000,
+1 g con un n
+de 7000 y
+2 g con un n
+de 10000.
+Datos:
+M(C) =
+12,01 g/mol;
+M(H) =
+1,01 g/mol.
+
+### Solución Paso a Paso
+
+#### Paso 1:
+Masa molar del
+mero y de cada
+cadena:
+Mero de
+polietileno
+(-CH2-CH2-):
+$$m = 2 \cdot 12,01 + 4 \cdot 1,01$$
+$$m = 28,06$$
+Unidad:
+$$\text{g/mol}$$
+Masa de cadena
+con extremos
+(+2,02 g/mol):
+- n = 5000:
+$$M_{5000} = 5000 \cdot 28,06 + 2,02$$
+$$M_{5000} = 140302,02$$
+Unidad:
+$$\text{g/mol}$$
+- n = 7000:
+$$M_{7000} = 7000 \cdot 28,06 + 2,02$$
+$$M_{7000} = 196422,02$$
+Unidad:
+$$\text{g/mol}$$
+- n = 10000:
+$$M_{10000} = 10000 \cdot 28,06 + 2,02$$
+$$M_{10000} = 280602,02$$
+Unidad:
+$$\text{g/mol}$$
+
+#### Paso 2:
+Moles de cada
+partida
+(n = m/Mi):
+- n = 5000:
+$$n_{5000} = \frac{1}{140302,02}$$
+$$n_{5000} \approx 7,13 \cdot 10^{-6}$$
+Unidad:
+$$\text{mol}$$
+- n = 7000:
+$$n_{7000} = \frac{1}{196422,02}$$
+$$n_{7000} \approx 5,09 \cdot 10^{-6}$$
+Unidad:
+$$\text{mol}$$
+- n = 10000:
+$$n_{10000} = \frac{2}{280602,02}$$
+$$n_{10000} \approx 7,13 \cdot 10^{-6}$$
+Unidad:
+$$\text{mol}$$
+Suma de moles:
+$$\sum n_i \approx 19,35 \cdot 10^{-6}$$
+Unidad:
+$$\text{mol}$$
+
+#### Paso 3:
+Masa promedio
+en número:
+$$\bar{M}_n = \frac{\sum w_i}{\sum n_i}$$
+$$\bar{M}_n = \frac{4}{19,35 \cdot 10^{-6}}$$
+$$\bar{M}_n \approx 206718,3$$
+Unidad:
+$$\text{g/mol}$$
+(Nota: Usando
+redondeo de
+moles da:
+$$206761,4$$
+Unidad:
+$$\text{g/mol}$$
+).
+
+#### Paso 4:
+Masa promedio
+en peso (Mw):
+$$\bar{M}_w = \sum w_i \cdot M_i$$
+$$\bar{M}_w = \frac{1}{4} \cdot M_{5000} + \frac{1}{4} \cdot M_{7000} + \frac{2}{4} \cdot M_{10000}$$
+$$\bar{M}_w \approx 224002$$
+Unidad:
+$$\text{g/mol}$$
+
+---
+
+## Ejercicio 2
+
+### Enunciado
+Transcription:
+Ejercicio
+resuelto 7.4
+Se han tabulado
+los pesos
+moleculares de
+un politetra-
+fluoroetileno
+(PTFE).
+Calcule:
+a) el peso
+molecular medio
+numérico,
+b) el peso
+molecular medio
+másico,
+c) el grado de
+polimerización
+medio numérico
+y d) el grado
+de polimeri-
+zación medio
+másico.
+Dato:
+Mero de PTFE =
+100 g/mol.
+
+### Solución Paso a Paso
+
+#### Paso 1:
+Marcas de
+clase (Mi):
+- 10k-20k:
+$$M_1 = 15000$$
+- 20k-30k:
+$$M_2 = 25000$$
+- 30k-40k:
+$$M_3 = 35000$$
+- 40k-50k:
+$$M_4 = 45000$$
+- 50k-60k:
+$$M_5 = 55000$$
+- 60k-70k:
+$$M_6 = 65000$$
+- 70k-80k:
+$$M_7 = 75000$$
+- 80k-90k:
+$$M_8 = 85000$$
+
+#### Paso 2:
+Peso medio
+numérico (Mn):
+$$\bar{M}_n = \sum x_i \cdot M_i$$
+$$\bar{M}_n = 0,03 \cdot 15000 + 0,09 \cdot 25000 + 0,15 \cdot 35000 + 0,25 \cdot 45000 + 0,22 \cdot 55000 + 0,14 \cdot 65000 + 0,08 \cdot 75000 + 0,04 \cdot 85000$$
+$$\bar{M}_n = 450 + 2250 + 5250 + 11250 + 12100 + 9100 + 6000 + 3400$$
+$$\bar{M}_n = 49800$$
+Unidad:
+$$\text{g/mol}$$
+
+#### Paso 3:
+Peso medio
+másico (Mw):
+$$\bar{M}_w = \sum w_i \cdot M_i$$
+$$\bar{M}_w = 0,01 \cdot 15000 + 0,04 \cdot 25000 + 0,11 \cdot 35000 + 0,23 \cdot 45000 + 0,24 \cdot 55000 + 0,18 \cdot 65000 + 0,12 \cdot 75000 + 0,07 \cdot 85000$$
+$$\bar{M}_w = 150 + 1000 + 3850 + 10350 + 13200 + 11700 + 9000 + 5950$$
+$$\bar{M}_w = 55200$$
+Unidad:
+$$\text{g/mol}$$
+
+#### Paso 4:
+Grados de
+polimerización:
+Masa del mero:
+$$m = 100$$
+Unidad:
+$$\text{g/mol}$$
+Grado medio
+numérico:
+$$\bar{n}_n = \frac{49800}{100}$$
+$$\bar{n}_n = 498$$
+Grado medio
+másico:
+$$\bar{n}_w = \frac{55200}{100}$$
+$$\bar{n}_w = 552$$
+
+---
+
+## Ejercicio 3
+
+### Enunciado
+Transcription:
+Problema de
+examen
+2021-22
+Se quiere
+fabricar
+poliacetato de
+vinilo (PVA)
+mezclando
+diferentes
+fracciones
+según el
+gráfico de
+barras.
+Determine:
+a) masa
+molecular de
+un mero,
+b) masa
+molecular
+promedio
+másica,
+c) masa
+molecular
+promedio
+numérica,
+d) índice de
+polidispersión.
+Datos:
+Intervalos con
+masas de:
+19 g en 0-10,
+26 g en 10-20,
+11 g en 20-30,
+5 g en 30-40 (x
+1000 g/mol).
+Datos
+atómicos:
+C = 12,01;
+H = 1,01;
+O = 16,00
+g/mol.
+Mero:
+[-CH2-CH-
+CO2CH3-]n.
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+Masa del mero:
+Fórmula:
+$$C_4H_6O_2$$
+$$m = 4 \cdot 12,01 + 6 \cdot 1,01 + 2 \cdot 16,00$$
+$$m = 86,1$$
+Unidad:
+$$\text{g/mol}$$
+
+#### Apartado b)
+
+Masa promedio
+másica:
+1. Marcas de
+clase (Mi):
+- 0-10k:
+$$M_1 = 5000$$
+- 10k-20k:
+$$M_2 = 15000$$
+- 20k-30k:
+$$M_3 = 25000$$
+- 30k-40k:
+$$M_4 = 35000$$
+
+2. Masa total:
+$$m_{tot} = 19 + 26 + 11 + 5$$
+$$m_{tot} = 61$$
+Unidad:
+$$\text{g}$$
+
+3. Promedio (Mw):
+$$\bar{M}_w = \sum w_i \cdot M_i$$
+$$\bar{M}_w = \left(\frac{19}{61} \cdot 5000\right) + \left(\frac{26}{61} \cdot 15000\right) + \left(\frac{11}{61} \cdot 25000\right) + \left(\frac{5}{61} \cdot 35000\right)$$
+$$\bar{M}_w \approx 15327,87$$
+Unidad:
+$$\text{g/mol}$$
+
+#### Apartado c)
+
+Masa promedio
+numérica (Mn):
+1. Moles de
+cadenas:
+- 0-10k:
+$$n_1 = \frac{19}{5000} = 3,80 \cdot 10^{-3}$$
+Unidad:
+$$\text{mol}$$
+- 10k-20k:
+$$n_2 = \frac{26}{15000} \approx 1,733 \cdot 10^{-3}$$
+Unidad:
+$$\text{mol}$$
+- 20k-30k:
+$$n_3 = \frac{11}{25000} = 0,44 \cdot 10^{-3}$$
+Unidad:
+$$\text{mol}$$
+- 30k-40k:
+$$n_4 = \frac{5}{35000} \approx 0,143 \cdot 10^{-3}$$
+Unidad:
+$$\text{mol}$$
+Suma de moles:
+$$\sum n_i \approx 6,116 \cdot 10^{-3}$$
+Unidad:
+$$\text{mol}$$
+
+2. Promedio (Mn):
+$$\bar{M}_n = \frac{m_{tot}}{\sum n_i}$$
+$$\bar{M}_n = \frac{61}{6,116 \cdot 10^{-3}}$$
+$$\bar{M}_n \approx 9973,8$$
+Unidad:
+$$\text{g/mol}$$
+
+#### Apartado d)
+
+Índice de
+polidispersión:
+$$IP = \frac{\bar{M}_w}{\bar{M}_n}$$
+$$IP = \frac{15327,87}{9973,8}$$
+$$IP \approx 1,54$$
+
+---
+
+## Ejercicio 4
+
+### Enunciado
+Transcription:
+Ejercicio
+resuelto 4.4
+Se tienen dos
+muestras de
+polietileno
+cuyas
+características
+se muestran
+en la tabla:
+Muestra I:
+density =
+0,965 g/cm3;
+X = 76,8%.
+Muestra II:
+density =
+0,925 g/cm3;
+X = 46,4%.
+Calcule las
+densidades del
+polietileno
+totalmente
+cristalino (rc)
+y del
+totalmente
+amorfo (ra).
+
+### Solución Paso a Paso
+
+#### Paso 1:
+Ecuación de
+cristalinidad:
+$$\frac{X}{100} = \frac{\rho_c \cdot (\rho - \rho_a)}{\rho \cdot (\rho_c - \rho_a)}$$
+
+#### Paso 2:
+Eliminación de
+variables
+(cociente):
+$$\frac{X_I \cdot \rho_I}{X_{II} \cdot \rho_{II}} = \frac{\rho_I - \rho_a}{\rho_{II} - \rho_a}$$
+
+#### Paso 3:
+Sustitución
+y cálculo de
+densidad
+amorfa:
+$$\frac{76,8 \cdot 0,965}{46,4 \cdot 0,925} = \frac{0,965 - \rho_a}{0,925 - \rho_a}$$
+$$1,72675 \cdot (0,925 - \rho_a) = 0,965 - \rho_a$$
+$$1,59724 - 1,72675 \cdot \rho_a = 0,965 - \rho_a$$
+$$0,63224 = 0,72675 \cdot \rho_a$$
+$$\rho_a \approx 0,870$$
+Unidad:
+$$\text{g/cm}^3$$
+
+#### Paso 4:
+Cálculo de
+densidad
+cristalina (rc):
+Sustituyendo
+en Muestra I:
+$$0,768 = \frac{\rho_c \cdot (0,965 - 0,870)}{0,965 \cdot (\rho_c - 0,870)}$$
+$$0,768 \cdot 0,965 \cdot (\rho_c - 0,870) = 0,095 \cdot \rho_c$$
+$$0,74112 \cdot \rho_c - 0,64477 = 0,095 \cdot \rho_c$$
+$$0,64612 \cdot \rho_c = 0,64477$$
+$$\rho_c \approx 0,998$$
+Unidad:
+$$\text{g/cm}^3$$
+
+---
+
+## Ejercicio 5
+
+### Enunciado
+Transcription:
+Ejercicio
+resuelto 4.6
+Un polímero se
+elabora a
+partir de
+cantidades
+iguales en masa
+de isopreno
+(C4H5CH3) y
+butadieno
+(C4H6).
+a) Nombre el
+proceso y
+esquematice la
+proporción.
+b) Determine
+la fracción
+molar de cada
+componente.
+c) Calcule la
+masa de azufre
+para producir
+el 1% de
+enlaces
+cruzados en
+2 kg de
+polímero.
+d) Si se eleva
+al 100%, señale
+el tipo de
+polímero y la
+masa de azufre
+necesaria.
+Datos:
+M(isopreno) =
+68,13 g/mol;
+M(butadieno) =
+54,10 g/mol;
+M(S) =
+32,06 g/mol.
+
+### Solución Paso a Paso
+
+#### Apartados a) y b)
+
+1. Moles de
+cada monómero
+en base de
+$$100$$
+Unidad:
+$$\text{g}$$
+(50 g de cada):
+$$n_{iso} = \frac{50}{68,13} \approx 0,7338$$
+Unidad:
+$$\text{mol}$$
+$$n_{but} = \frac{50}{54,10} \approx 0,9242$$
+Unidad:
+$$\text{mol}$$
+
+2. Relación de
+meros:
+$$\text{Relación} = \frac{0,9242}{0,7338} \approx 1,26$$
+Equivale a 5
+butadienos
+por cada 4
+isoprenos.
+Copolimerización
+al azar.
+
+3. Fracciones
+molares (xi):
+$$x_{iso} = \frac{0,7338}{0,7338 + 0,9242} \approx 0,44$$
+$$x_{but} = \frac{0,9242}{0,7338 + 0,9242} \approx 0,56$$
+
+#### Apartado c)
+
+1. Moles de
+meros en
+$$2000$$
+Unidad:
+$$\text{g}$$
+(1000 g de cada):
+$$n_{iso} = \frac{1000}{68,13} \approx 14,68$$
+Unidad:
+$$\text{mol}$$
+$$n_{but} = \frac{1000}{54,10} \approx 18,48$$
+Unidad:
+$$\text{mol}$$
+Suma:
+$$\sum n_{meros} = 33,16$$
+Unidad:
+$$\text{mol}$$
+
+2. Enlaces
+cruzados
+máximos:
+$$n_{max} = \frac{33,16}{2} = 16,58$$
+Unidad:
+$$\text{mol}$$
+
+3. Moles de
+enlace reales
+(1%):
+$$n_{real} = 16,58 \cdot 0,01 = 0,1658$$
+Unidad:
+$$\text{mol}$$
+
+4. Moles de
+azufre (2 S
+por enlace):
+$$n_S = 2 \cdot 0,1658 = 0,3316$$
+Unidad:
+$$\text{mol}$$
+Masa de S:
+$$m_S = 0,3316 \cdot 32,06$$
+$$m_S \approx 10,63$$
+Unidad:
+$$\text{g}$$
+(Antes:
+termoplástico,
+después:
+elastómero).
+
+#### Apartado d)
+
+Supervulcanización
+al 100%:
+El polímero se
+vuelve
+termoestable
+rígido.
+Masa de S:
+$$m_S = 10,63 \cdot 100$$
+$$m_S = 1063$$
+Unidad:
+$$\text{g}$$
+
+---
+
+## Ejercicio 6
+
+### Enunciado
+Transcription:
+Problema
+propuesto 4.4
+El nailon-6,6
+es un polímero
+formado por
+condensación,
+cuyo nombre
+deriva de los
+6 átomos de C
+que tienen
+cada uno de
+los monómeros
+que lo
+conforman:
+Ácido
+hexadioico +
+1,6-hexanodia-
+mina.
+Calcule qué
+masas de cada
+uno de los
+monómeros será
+necesario
+combinar para
+conseguir
+15 kg de
+nailon-6,6.
+Datos:
+M(C) =
+12,01 g/mol;
+M(O) =
+16,00 g/mol;
+M(N) =
+14,01 g/mol;
+M(H) =
+1,01 g/mol.
+
+### Solución Paso a Paso
+
+#### Paso 1:
+Masa del mero:
+Condensación
+pierde 2 H2O.
+Fórmula:
+$$C_{12}H_{22}O_2N_2$$
+$$m = 12 \cdot 12,01 + 22 \cdot 1,01 + 2 \cdot 16,00 + 2 \cdot 14,01$$
+$$m = 226,36$$
+Unidad:
+$$\text{g/mol}$$
+
+#### Paso 2:
+Masa de los
+monómeros:
+- Ácido hexadioico
+(C6H10O4):
+$$M_{ac} = 6 \cdot 12,01 + 10 \cdot 1,01 + 4 \cdot 16,00$$
+$$M_{ac} = 146,16$$
+Unidad:
+$$\text{g/mol}$$
+- 1,6-hexanodiamina
+(C6H16N2):
+$$M_{am} = 6 \cdot 12,01 + 16 \cdot 1,01 + 2 \cdot 14,01$$
+$$M_{am} = 116,24$$
+Unidad:
+$$\text{g/mol}$$
+
+#### Paso 3:
+Cálculo de las
+masas para
+$$15$$
+Unidad:
+$$\text{kg}$$
+de polímero:
+- Ácido:
+$$m_{ac} = 15 \cdot \frac{146,16}{226,36}$$
+$$m_{ac} \approx 9,69$$
+Unidad:
+$$\text{kg}$$
+- Amina:
+$$m_{am} = 15 \cdot \frac{116,24}{226,36}$$
+$$m_{am} \approx 7,70$$
+Unidad:
+$$\text{kg}$$
+(Nota: se
+pierden 2,39 kg
+de agua en el
+proceso).
+
+---
+
+## Ejercicio 7
+
+### Enunciado
+Transcription:
+Problema
+propuesto 4.9
+El PE
+(polietileno)
+es el material
+más comúnmente
+empleado para
+fabricar papel
+film de uso en
+cocina.
+Se conoce que,
+en un rollo de
+30 m de
+longitud,
+30 cm de ancho
+y 12,15 micra
+de espesor, el
+número
+aproximado de
+átomos de H
+es 9*10^24.
+Señale el tipo
+de PE que se
+ha empleado.
+Datos:
+M(C) =
+12,01 g/mol;
+M(H) =
+1,01 g/mol;
+NA =
+6,022*10^23.
+
+### Solución Paso a Paso
+
+#### Paso 1:
+Volumen del
+film (V):
+Dimensiones en
+centímetros:
+- Longitud:
+$$L = 3000$$
+Unidad:
+$$\text{cm}$$
+- Ancho:
+$$w = 30$$
+Unidad:
+$$\text{cm}$$
+- Espesor:
+$$t = 12,15 \cdot 10^{-4}$$
+Unidad:
+$$\text{cm}$$
+Volumen:
+$$V = 3000 \cdot 30 \cdot 12,15 \cdot 10^{-4}$$
+$$V = 109,35$$
+Unidad:
+$$\text{cm}^3$$
+
+#### Paso 2:
+Masa de
+Hidrógeno (mH):
+Moles de H:
+$$n_H = \frac{9 \cdot 10^{24}}{6,022 \cdot 10^{23}}$$
+$$n_H \approx 14,945$$
+Unidad:
+$$\text{mol}$$
+Masa de H:
+$$m_H = 14,945 \cdot 1,01$$
+$$m_H \approx 15,095$$
+Unidad:
+$$\text{g}$$
+
+#### Paso 3:
+Masa de
+Carbono (mC):
+Relación en PE
+(-CH2-CH2-):
+$$n_C = \frac{n_H}{2}$$
+$$n_C \approx 7,4725$$
+Unidad:
+$$\text{mol}$$
+Masa de C:
+$$m_C = 7,4725 \cdot 12,01$$
+$$m_C \approx 89,745$$
+Unidad:
+$$\text{g}$$
+
+#### Paso 4:
+Masa total
+y densidad:
+Masa del film:
+$$m = 15,095 + 89,745$$
+$$m = 104,84$$
+Unidad:
+$$\text{g}$$
+Densidad:
+$$\rho = \frac{104,84}{109,35}$$
+$$\rho \approx 0,958$$
+Unidad:
+$$\text{g/cm}^3$$
+(Se trata de PE
+de alta
+densidad, PEAD
+o HDPE).
