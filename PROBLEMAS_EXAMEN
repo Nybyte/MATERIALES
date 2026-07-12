@@ -1,0 +1,1303 @@
+# Problemas de Examen
+
+## Índice
+* [Ejercicio 1: Difusión de Fósforo en Silicio y Determinación de Temperatura](#ejercicio-1)
+* [Ejercicio 2: Sistemas de Deslizamiento, Burgers y Solubilidad de Cu-Ni](#ejercicio-2)
+* [Ejercicio 3: Estructura del Copolímero Butadieno-Isopreno y Vulcanización](#ejercicio-3)
+* [Ejercicio 4: Fases y Microestructura en Aleación Férrea Hipoeutectoide](#ejercicio-4)
+* [Ejercicio 5: Defectos Schottky en GaAs con Estructura Esfarelita](#ejercicio-5)
+
+---
+
+## Conceptos Clave
+
+* **Difusión**:
+  - Arrhenius:
+    $$D = D_0 \cdot e^{-\frac{Q}{R \cdot T}}$$
+  - Ley Fick 2:
+    $$\frac{C_x - C_0}{C_s - C_0} = 1 - \text{erf}(z)$$
+* **Estructura**
+  **FCC**:
+  - Relación:
+    $$\sqrt{2} \cdot a = 4 \cdot r$$
+  - Burgers:
+    $$\vec{b} = \frac{a}{2}[110]$$
+    $$\vert{}\vec{b}\vert{} = 2 \cdot r$$
+* **Hume-**
+  **Rothery**:
+  - Solubilidad:
+    $$\%\text{Dif} = \left\vert{}\frac{r_{dis} - r_{sol}}{r_{dis}}\right\vert{} \cdot 100 < 15\%$$
+* **Densidad**:
+  - Celda:
+    $$\rho = \frac{n \cdot M_{prom}}{V_c \cdot N_A}$$
+* **Polímeros**:
+  - Copolímeros:
+    $$\frac{n_A}{n_B} = \frac{m_A / M_A}{m_B / M_B}$$
+  - Enlaces
+    cruzados:
+    $$\%\text{ Enlaces} = \frac{2 \cdot n_S}{n_{db}} \cdot 100$$
+* **Aceros**:
+  - C cementita:
+    $$\%C_{Fe_3C} = \frac{M_C}{M_{Fe_3C}} \cdot 100 \approx 6,67\%$$
+  - Perlita:
+    $$W_{Perlita} = \frac{C_0 - 0,022}{0,77 - 0,022} \cdot 100$$
+* **Defectos**:
+  - Esfarelita:
+    $$r_c + r_a = \frac{\sqrt{3} \cdot a}{4}$$
+  - Schottky:
+    $$\text{Defectos} = n_{teor} - n_{real}$$
+
+---
+
+## Ejercicio 1
+
+### Enunciado
+Transcription:
+Problema 1
+(1 punto)
+Una oblea de
+Silicio (Si)
+puro se somete
+a un proceso de
+dopado por
+difusión de
+Fósforo (P) a
+una concentra-
+ción superficial
+constante de
+5*10^17 at/cm3.
+Se requiere que
+a una profun-
+didad de
+0,5 micrometros,
+la concentra-
+ción de Fósforo
+sea de
+1*10^16 at/cm3
+tras un trata-
+miento de
+2 horas.
+Calcule la
+temperatura de
+operación
+necesaria.
+Datos:
+D0 = 10,5
+cm2/s;
+Energía de
+activación =
+380 kJ/mol;
+R = 8,314
+J/K*mol;
+Ferr(1,6) =
+0.9763;
+Ferr(1,7) =
+0.9838;
+Ferr(1,8) =
+0.9891.
+
+### Solución Paso a Paso
+
+#### Paso 1:
+Planteamiento de
+la Segunda Ley
+de Fick:
+Cuando
+introducimos un
+dopante en una
+oblea desde una
+fuente
+superficial
+constante, la
+concentración
+del dopante a
+una profundidad
+$$x$$
+y un tiempo
+$$t$$
+se rige por la
+ecuación:
+$$\frac{C_x - C_0}{C_s - C_0} = 1 - \text{erf}\left(\frac{x}{2\sqrt{Dt}}\right)$$
+Extraemos los
+datos del
+enunciado:
+Concentración
+en la
+superficie:
+$$C_s = 5 \cdot 10^{17}$$
+Unidad:
+$$\text{at/cm}^3$$
+Concentración a
+la profundidad:
+$$C_x = 1 \cdot 10^{16}$$
+Unidad:
+$$\text{at/cm}^3$$
+Concentración
+inicial:
+$$C_0 = 0$$
+Unidad:
+$$\text{at/cm}^3$$
+(ya que es
+Silicio puro).
+Sustituimos
+estos valores:
+$$\frac{1 \cdot 10^{16} - 0}{5 \cdot 10^{17} - 0} = 0,02$$
+Igualamos al
+término de la
+derecha:
+$$0,02 = 1 - \text{erf}\left(\frac{x}{2\sqrt{Dt}}\right)$$
+Despejamos la
+función error:
+$$\text{erf}\left(\frac{x}{2\sqrt{Dt}}\right) = 1 - 0,02$$
+$$\text{erf}\left(\frac{x}{2\sqrt{Dt}}\right) = 0,98$$
+
+#### Paso 2:
+Interpolación
+Lineal
+Rigurosa:
+Llamamos
+$$z$$
+al argumento
+dentro del
+paréntesis:
+$$z = \frac{x}{2\sqrt{Dt}}$$
+Sabemos que la
+función error
+es exactamente:
+$$\text{erf}(z) = 0,98$$
+Buscamos el
+valor en los
+datos:
+$$\text{erf}(1,6) = 0,9763$$
+$$\text{erf}(1,7) = 0,9838$$
+$$\text{erf}(1,8) = 0,9891$$
+Como
+$$0,98$$
+está entre
+$$0,9763$$
+y
+$$0,9838$$:
+$$z$$
+estará entre
+$$1,6$$
+y
+$$1,7$$
+Aplicamos la
+fórmula de
+interpolación:
+$$z = z_1 + \frac{Y - Y_1}{Y_2 - Y_1} \cdot (z_2 - z_1)$$
+Donde:
+$$z_1 = 1,6$$
+$$Y_1 = 0,9763$$
+$$z_2 = 1,7$$
+$$Y_2 = 0,9838$$
+$$Y = 0,98$$
+Sustituimos
+los números:
+$$z = 1,6 + \frac{0,98 - 0,9763}{0,9838 - 0,9763} \cdot (1,7 - 1,6)$$
+Resolvemos
+paso a paso:
+$$0,98 - 0,9763 = 0,0037$$
+$$0,9838 - 0,9763 = 0,0075$$
+$$1,7 - 1,6 = 0,1$$
+Sustituimos:
+$$z = 1,6 + \frac{0,0037}{0,0075} \cdot 0,1$$
+$$z = 1,6 + 0,493333 \cdot 0,1$$
+$$z = 1,6 + 0,049333$$
+$$z \approx 1,64933$$
+Establecemos:
+$$\frac{x}{2\sqrt{Dt}} = 1,64933$$
+
+#### Paso 3:
+Conversión de
+Unidades y
+Cálculo de D:
+Antes de
+despejar
+$$D$$,
+pasamos los
+datos a
+sistema
+cegesimal:
+Parámetro
+$$D_0$$
+está en:
+$$\text{cm}^2\text{/s}$$
+Profundidad:
+$$x = 0,5\ \mu\text{m}$$
+$$x = 0,5 \cdot 10^{-4}$$
+Unidad:
+$$\text{cm}$$
+Tiempo:
+$$t = 2\text{ horas}$$
+$$t = 2 \cdot 3600$$
+$$t = 7200$$
+Unidad:
+$$\text{s}$$
+Sustituimos
+$$x$$
+y
+$$t$$:
+$$\frac{0,5 \cdot 10^{-4}}{2\sqrt{D \cdot 7200}} = 1,64933$$
+Multiplicamos:
+$$0,5 \cdot 10^{-4} = 1,64933 \cdot 2 \cdot \sqrt{D \cdot 7200}$$
+$$0,5 \cdot 10^{-4} = 3,29866 \cdot \sqrt{D \cdot 7200}$$
+Despejamos la
+raíz:
+$$\sqrt{D \cdot 7200} = \frac{0,5 \cdot 10^{-4}}{3,29866}$$
+$$\sqrt{D \cdot 7200} = 1,51576 \cdot 10^{-5}$$
+Elevamos al
+cuadrado:
+$$D \cdot 7200 = (1,51576 \cdot 10^{-5})^2$$
+$$D \cdot 7200 = 2,29754 \cdot 10^{-10}$$
+Despejamos
+$$D$$:
+$$D = \frac{2,29754 \cdot 10^{-10}}{7200}$$
+$$D = 3,19103 \cdot 10^{-14}$$
+Unidad:
+$$\text{cm}^2\text{/s}$$
+
+#### Paso 4:
+Determinación de
+la Temperatura:
+Usamos
+Arrhenius:
+$$D = D_0 \cdot e^{-\frac{Q}{R \cdot T}}$$
+Datos:
+$$D_0 = 10,5$$
+Unidad:
+$$\text{cm}^2\text{/s}$$
+Energía:
+$$Q = 380000$$
+Unidad:
+$$\text{J/mol}$$
+(multiplicando
+por 1000).
+Constante R:
+$$R = 8,314$$
+Unidad:
+$$\text{J/(mol}\cdot\text{K)}$$
+Pasamos
+$$D_0$$
+dividiendo:
+$$\frac{D}{D_0} = e^{-\frac{Q}{R \cdot T}}$$
+Sustituimos:
+$$\frac{3,19103 \cdot 10^{-14}}{10,5} = e^{-\frac{380000}{8,314 \cdot T}}$$
+$$3,03907 \cdot 10^{-15} = e^{-\frac{380000}{8,314 \cdot T}}$$
+Aplicamos
+logaritmo
+natural:
+$$\ln(3,03907 \cdot 10^{-15}) = -\frac{380000}{8,314 \cdot T}$$
+Calculamos:
+$$-33,4284 = -\frac{380000}{8,314 \cdot T}$$
+Multiplicamos
+por menos uno:
+$$33,4284 = \frac{380000}{8,314 \cdot T}$$
+Despejamos
+$$T$$:
+$$T = \frac{380000}{8,314 \cdot 33,4284}$$
+$$T = \frac{380000}{277,9237}$$
+$$T = 1367,28$$
+Unidad:
+$$\text{K}$$
+Convertimos a
+grados Celsius:
+$$T = 1367,28 - 273,15$$
+$$T = 1094,13$$
+Unidad:
+$$\text{^{\circ}C}$$
+
+---
+
+## Ejercicio 2
+
+### Enunciado
+Transcription:
+Problema 2
+(2 puntos)
+Se analiza un
+hilo conductor
+de Cobre (Cu)
+de alta pureza
+utilizado para
+pistas de
+circuitos
+impresos. A
+temperatura
+ambiente, el
+cobre presenta
+una densidad de
+8,94 g/cm3 y
+un parámetro
+reticular de
+a = 3,62 A.
+a. (0,75 puntos)
+Identifique el
+sistema de
+deslizamiento
+para este
+material
+conductor.
+Calcule el
+vector de
+Burgers y su
+módulo y
+demuestre su
+relación
+geométrica con
+el radio
+atómico. Dibuje
+la celda unidad
+situando el
+plano de
+deslizamiento y
+el vector de
+Burgers.
+b. (1,25 puntos)
+Se desea
+fabricar una
+aleación de
+Cuproníquel
+para
+resistencias de
+precisión
+mezclando 80 g
+de Cobre con
+20 g de Níquel
+(Ni). Verifique
+si se cumple el
+criterio de
+tamaño de las
+reglas de
+Hume-Rothery.
+Calcule la
+densidad
+teórica de la
+aleación
+resultante
+(asuma que el
+parámetro de
+red no varía
+significativa-
+mente respecto
+al del cobre
+puro)
+Datos:
+r(Ni) = 1,25 A;
+M(Cu) =
+63,55 g/mol,
+M(Ni) =
+58,69 g/mol,
+NA =
+6,022*10^23
+átomos/mol.
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+1. Estructura y
+sistemas de
+deslizamiento:
+El cobre (Cu)
+puro tiene
+estructura:
+$$\text{FCC}$$
+(Cúbica
+Centrada en las
+Caras).
+Planos de
+deslizamiento:
+familia de
+planos
+$$\{111\}$$
+(son 4 planos).
+Direcciones de
+deslizamiento:
+familia de
+direcciones
+$$\langle 110 \rangle$$
+(son 3 por plano).
+Sistemas de
+deslizamiento:
+consta de 12 en
+total:
+$$\{111\}\langle 110 \rangle$$
+
+2. Relación
+geométrica:
+En celdas FCC,
+los átomos
+se tocan en la
+diagonal de
+la cara:
+$$\sqrt{2} \cdot a = 4 \cdot r$$
+Despejamos el
+radio atómico
+$$r$$:
+$$r = \frac{\sqrt{2} \cdot a}{4}$$
+Sustituimos el
+parámetro
+$$a$$:
+$$a = 3,62$$
+Unidad:
+$$\text{\AA}$$
+Calculamos:
+$$r = \frac{\sqrt{2} \cdot 3,62}{4}$$
+$$r \approx 1,28$$
+Unidad:
+$$\text{\AA}$$
+
+3. Vector de
+Burgers:
+Su expresión en
+estructura FCC
+es:
+$$\vec{b} = \frac{a}{2}[110]$$
+El módulo del
+vector es:
+$$\vert{}\vec{b}\vert{} = \frac{\sqrt{2} \cdot a}{2}$$
+Sustituimos
+$$\sqrt{2} \cdot a = 4 \cdot r$$:
+$$\vert{}\vec{b}\vert{} = \frac{4 \cdot r}{2}$$
+$$\vert{}\vec{b}\vert{} = 2 \cdot r$$
+Cálculo
+numérico del
+módulo:
+$$\vert{}\vec{b}\vert{} = \frac{\sqrt{2} \cdot 3,62}{2}$$
+$$\vert{}\vec{b}\vert{} \approx 2,56$$
+Unidad:
+$$\text{\AA}$$
+Que equivale a:
+$$2 \cdot 1,28 = 2,56$$
+Unidad:
+$$\text{\AA}$$
+
+4. Descripción
+del dibujo
+para el
+examen:
+- Se dibuja un
+cubo (celda
+FCC) con
+nodos en
+vértices y en
+centros de
+caras.
+- El plano de
+deslizamiento
+es el plano
+$$\{111\}$$
+que une los
+puntos:
+$$(1,0,0)$$
+$$(0,1,0)$$
+$$(0,0,1)$$
+- El vector de
+Burgers es
+una flecha
+que va desde
+$$(1,0,0)$$
+hasta el nodo
+$$(1/2,1/2,0)$$
+situado en el
+centro de la
+cara inferior.
+
+#### Apartado b)
+
+1. Criterio de
+Hume-Rothery:
+La diferencia
+de radios de
+soluto y
+disolvente
+debe ser menor
+al 15%.
+Disolvente
+(Cobre):
+$$r_{Cu} = 1,28$$
+Unidad:
+$$\text{\AA}$$
+Soluto
+(Níquel):
+$$r_{Ni} = 1,25$$
+Unidad:
+$$\text{\AA}$$
+Calculamos la
+diferencia
+porcentual:
+$$\%\text{Dif} = \left\vert{}\frac{r_{Cu} - r_{Ni}}{r_{Cu}}\right\vert{} \cdot 100$$
+$$\%\text{Dif} = \left\vert{}\frac{1,28 - 1,25}{1,28}\right\vert{} \cdot 100$$
+$$\%\text{Dif} \approx 2,34\%$$
+Como
+$$2,34\% < 15\%$$
+se cumple el
+criterio para
+la solución
+sólida.
+
+2. Densidad
+teórica:
+Fórmula:
+$$\rho = \frac{n \cdot M_{prom}}{V_c \cdot N_A}$$
+Estructura FCC:
+$$n = 4$$
+parámetro:
+$$a = 3,62 \cdot 10^{-8}$$
+Unidad:
+$$\text{cm}$$
+Volumen
+celda:
+$$V_c = a^3$$
+$$V_c = (3,62 \cdot 10^{-8})^3$$
+$$V_c \approx 4,7436 \cdot 10^{-23}$$
+Unidad:
+$$\text{cm}^3$$
+Constante de
+Avogadro:
+$$N_A = 6,022 \cdot 10^{23}$$
+Unidad:
+$$\text{at/mol}$$
+Masa molar
+media:
+Calculamos
+moles de Cu:
+$$n_{Cu} = \frac{80}{63,55}$$
+$$n_{Cu} \approx 1,2588$$
+Unidad:
+$$\text{mol}$$
+moles de Ni:
+$$n_{Ni} = \frac{20}{58,69}$$
+$$n_{Ni} \approx 0,3408$$
+Unidad:
+$$\text{mol}$$
+moles totales:
+$$n_{tot} = 1,2588 + 0,3408$$
+$$n_{tot} \approx 1,5996$$
+Unidad:
+$$\text{mol}$$
+Fracciones
+atómicas:
+$$X_{Cu} = \frac{1,2588}{1,5996}$$
+$$X_{Cu} \approx 0,7869$$
+$$X_{Ni} = \frac{0,3408}{1,5996}$$
+$$X_{Ni} \approx 0,2131$$
+Masa molar
+promedio:
+$$M_{prom} = X_{Cu} \cdot M_{Cu} + X_{Ni} \cdot M_{Ni}$$
+$$M_{prom} = 0,7869 \cdot 63,55 + 0,2131 \cdot 58,69$$
+$$M_{prom} \approx 62,514$$
+Unidad:
+$$\text{g/mol}$$
+Sustituimos:
+$$\rho = \frac{4 \cdot 62,514}{4,7436 \cdot 10^{-23} \cdot 6,022 \cdot 10^{23}}$$
+$$\rho = \frac{250,056}{28,566}$$
+$$\rho \approx 8,75$$
+Unidad:
+$$\text{g/cm}^3$$
+
+---
+
+## Ejercicio 3
+
+### Enunciado
+Transcription:
+Problema 3
+(2 puntos)
+Se fabrica un
+copolímero con
+la mitad de
+masa de
+butadieno
+(C4H6) que
+isopreno
+(C4H5CH3).
+a. (0,75 puntos)
+Dibuje el
+copolímero
+resultante y
+determine un
+posible esquema
+de su
+estructura,
+teniendo en
+cuenta las
+proporciones
+de partida.
+b. (1,25 puntos)
+Se añaden
+15 g de azufre
+(S) a 500 g de
+este polímero.
+Calcule el
+porcentaje de
+todos los
+enlaces
+cruzados
+posibles que
+representa esa
+cantidad de
+azufre, he
+indica que
+proceso se
+origina y que
+polímero
+tendríamos
+antes y
+después de
+añadir el
+azufre.
+Datos:
+M(C4H5CH3) =
+68.13 g/mol;
+M(C4H6) =
+54.10 g/mol;
+M(S) =
+32 g/mol
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+1. Proporciones y
+relación molar:
+El enunciado
+indica:
+$$m_{butadieno} = x$$
+$$m_{isopreno} = 2 \cdot x$$
+Base de cálculo:
+$$100$$
+Unidad:
+$$\text{g}$$
+de isopreno y
+$$50$$
+Unidad:
+$$\text{g}$$
+de butadieno.
+Moles de cada
+componente:
+$$n_{butadieno} = \frac{50}{54,10}$$
+$$n_{butadieno} \approx 0,9242$$
+Unidad:
+$$\text{mol}$$
+$$n_{isopreno} = \frac{100}{68,13}$$
+$$n_{isopreno} \approx 1,4678$$
+Unidad:
+$$\text{mol}$$
+Relación molar:
+$$\frac{n_{isopreno}}{n_{butadieno}} = \frac{1,4678}{0,9242}$$
+$$\frac{n_{isopreno}}{n_{butadieno}} \approx 1,6$$
+En enteros:
+$$\frac{8}{5}$$
+Por cada 5
+unidades de
+butadieno hay
+8 de isopreno.
+Es un copolímero
+estadístico
+(al azar).
+
+2. Unidades y
+esquema:
+Apertura 1,4
+de dienos:
+Butadieno (B):
+$$-\text{CH}_2-\text{CH}=\text{CH}-\text{CH}_2-$$
+Isopreno (I):
+$$-\text{CH}_2-\text{C}(\text{CH}_3)=\text{CH}-\text{CH}_2-$$
+Esquema de
+cadena lineal:
+$$\text{-I-B-I-I-B-I-B-I-I-B-}$$
+
+#### Apartado b)
+
+1. Moles de
+unidades totales
+en
+$$500$$
+Unidad:
+$$\text{g}$$
+de polímero:
+Masa de
+butadieno:
+$$m_B = \frac{500}{3}$$
+$$m_B \approx 166,67$$
+Unidad:
+$$\text{g}$$
+Masa de
+isopreno:
+$$m_I = \frac{1000}{3}$$
+$$m_I \approx 333,33$$
+Unidad:
+$$\text{g}$$
+Moles:
+$$n_B = \frac{166,67}{54,10}$$
+$$n_B \approx 3,081$$
+Unidad:
+$$\text{mol}$$
+$$n_I = \frac{333,33}{68,13}$$
+$$n_I \approx 4,893$$
+Unidad:
+$$\text{mol}$$
+Como cada
+unidad conserva
+un doble enlace,
+los moles de
+dobles enlaces
+totales son:
+$$n_{db} = 3,081 + 4,893$$
+$$n_{db} = 7,974$$
+Unidad:
+$$\text{mol}$$
+
+2. Moles de
+azufre:
+$$n_S = \frac{15}{32}$$
+$$n_S = 0,46875$$
+Unidad:
+$$\text{mol}$$
+Si cada puente
+de azufre
+une 2 dobles
+enlaces:
+$$\text{db mod} = 2 \cdot n_S$$
+$$\text{db mod} = 2 \cdot 0,46875$$
+$$\text{db mod} = 0,9375$$
+Unidad:
+$$\text{mol}$$
+Porcentaje de
+enlaces:
+$$\%\text{ Enlaces} = \frac{0,9375}{7,974} \cdot 100$$
+$$\%\text{ Enlaces} \approx 11,76\%$$
+(Nota: Si
+se asume
+un puente por
+doble enlace,
+sería
+$$5,88\%$$).
+
+3. Proceso y
+propiedades:
+Proceso:
+Vulcanización.
+Antes del
+azufre:
+Elastómero
+termoplástico,
+lineal, viscoso
+y mecánicamente
+débil.
+Después del
+azufre:
+Elastómero
+termoestable,
+red elástica,
+resistente,
+que no fluye
+ni se funde.
+
+---
+
+## Ejercicio 4
+
+### Enunciado
+Transcription:
+Problema 4
+(3 puntos)
+Se ha preparado
+una aleación
+férrea mediante
+fusión de
+2,0 kg de Fe3C y
+37,3 kg de Fe:
+a. (0,5 punto)
+Dibuje el
+diagrama de
+fases de
+equilibrio del
+sistema Fe-Fe3C
+considerando
+que las líneas
+son rectas,
+indicando sobre
+el mismo las
+fases y
+temperaturas
+importantes.
+b. (1,5 puntos)
+Qué cantidad de
+cada fase,
+incluida las de
+dentro del
+eutectoide
+tendremos a
+temperatura
+ambiente y
+dibuja la
+microestructura
+resultante.
+c. (1 punto)
+Realizar el
+enfriamiento,
+curva T-t,
+desde la
+temperatura de
+austenización
+para un acero
+con 1,7%C hasta
+temperatura
+ambiente,
+indicando en
+cada tramo
+fases,
+microconsti-
+tuyentes,
+reacciones si
+procede y
+microestructura.
+Datos:
+M(C) =
+12 g/mol;
+M(Fe) =
+55.85 g/mol
+
+### Solución Paso a Paso
+
+#### Paso previo:
+Calcular la
+composición de
+carbono (%C):
+Datos:
+Masa cementita:
+$$m_{Fe_3C} = 2,0$$
+Unidad:
+$$\text{kg}$$
+Masa de hierro:
+$$m_{Fe} = 37,3$$
+Unidad:
+$$\text{kg}$$
+Masa total:
+$$m_{tot} = 39,3$$
+Unidad:
+$$\text{kg}$$
+Masas molares:
+$$M_C = 12$$
+Unidad:
+$$\text{g/mol}$$
+$$M_{Fe} = 55,85$$
+Unidad:
+$$\text{g/mol}$$
+Masa molar de
+la cementita:
+$$M_{Fe_3C} = 3 \cdot 55,85 + 12$$
+$$M_{Fe_3C} = 179,55$$
+Unidad:
+$$\text{g/mol}$$
+Porcentaje de
+C en la
+cementita pura:
+$$\%C_{Fe_3C} = \frac{12}{179,55} \cdot 100$$
+$$\%C_{Fe_3C} \approx 6,683\%$$
+Masa de C en la
+cementita:
+$$m_C = 2,0 \cdot 0,06683$$
+$$m_C \approx 0,13366$$
+Unidad:
+$$\text{kg}$$
+% global de C
+de la
+aleación:
+$$\%C_{global} = \frac{0,13366}{39,3} \cdot 100$$
+$$\%C_{global} \approx 0,34\%$$
+Conclusión:
+Al ser menor de
+$$0,77\%$$
+de C, es un
+acero
+hipoeutectoide.
+
+#### Apartado a)
+
+Descripción del
+diagrama de
+fases
+simplificado:
+1. Eje vertical:
+Temperatura.
+2. Eje horiz.:
+Composición
+de 0 a
+$$6,67\%$$
+de C.
+Puntos clave:
+- Eutectoide:
+A
+$$727$$
+Unidad:
+$$\text{^{\circ}C}$$
+y
+$$0,77\%$$
+de C. Reacción:
+$$\gamma \rightarrow \alpha + \text{Fe}_3\text{C}$$
+- Eutéctico:
+A
+$$1148$$
+Unidad:
+$$\text{^{\circ}C}$$
+y
+$$4,3\%$$
+de C.
+Límites:
+- Ferrita
+  (alpha):
+Extremo izq,
+máximo
+$$0,022\%$$
+de C a
+$$727$$
+Unidad:
+$$\text{^{\circ}C}$$
+y
+$$0\%$$
+a temp.
+ambiente.
+- Austenita
+  (gamma):
+Región central
+superior,
+máximo
+$$2,11\%$$
+de C a
+$$1148$$
+Unidad:
+$$\text{^{\circ}C}$$
+- Cementita:
+Línea vertical
+en
+$$6,67\%$$
+de C.
+
+#### Apartado b)
+
+A temperatura
+ambiente, las
+fases en
+equilibrio son
+ferrita (alpha)
+y cementita.
+Solubilidad:
+$$C_{\alpha} \approx 0\%$$
+de C.
+$$C_{Fe_3C} = 6,67\%$$
+de C.
+
+1. Regla de
+la palanca
+global:
+Fracción de
+ferrita:
+$$W_{\alpha} = \frac{6,67 - 0,34}{6,67 - 0}$$
+$$W_{\alpha} \approx 94,9\%$$
+Masa de alpha:
+$$m_{\alpha} = 0,949 \cdot 39,3$$
+$$m_{\alpha} = 37,3$$
+Unidad:
+$$\text{kg}$$
+Fracción de
+cementita:
+$$W_{Fe_3C} = \frac{0,34 - 0}{6,67 - 0}$$
+$$W_{Fe_3C} \approx 5,1\%$$
+Masa cementita:
+$$m_{Fe_3C} = 0,051 \cdot 39,3$$
+$$m_{Fe_3C} = 2,0$$
+Unidad:
+$$\text{kg}$$
+
+2. Fases
+dentro del
+eutectoide
+(Perlita):
+Se forma
+ferrita
+proeutéctica:
+$$W_{\alpha,pro} = \frac{0,77 - 0,34}{0,77 - 0,022}$$
+$$W_{\alpha,pro} \approx 57,5\%$$
+Austenita
+restante se
+transforma en
+Perlita:
+$$W_{Perlita} = \frac{0,34 - 0,022}{0,77 - 0,022}$$
+$$W_{Perlita} \approx 42,5\%$$
+Desglose
+de fases en
+la Perlita:
+Ferrita
+eutectoide:
+$$W_{\alpha,eut} = W_{\alpha} - W_{\alpha,pro}$$
+$$W_{\alpha,eut} = 94,9\% - 57,5\%$$
+$$W_{\alpha,eut} = 37,4\%$$
+Cementita
+eutectoide:
+$$W_{Fe_3C,eut} = 5,1\%$$
+
+3. Descripción
+de dibujo
+microestruc-
+tural:
+- Se dibuja un
+círculo.
+- Se rellenan
+granos grandes
+lisos que
+representan
+la ferrita
+proeutéctica
+$$57,5\%$$
+del área.
+- El resto
+$$42,5\%$$
+se dibuja con
+láminas alternas
+(Perlita).
+
+#### Apartado c)
+
+Curva de
+enfriamiento
+para acero con
+$$1,7\%$$
+de C:
+Es un acero
+hipereutectoide.
+Tramos de la
+curva:
+1. De temp. de
+austenización
+hasta
+$$A_{cm}$$:
+Enfriamiento
+continuo de
+austenita
+homogénea
+$$\gamma$$
+con pendiente
+constante.
+2. De
+$$A_{cm}$$
+hasta justo
+antes de
+$$727$$
+Unidad:
+$$\text{^{\circ}C}$$:
+Nucleación y
+crecimiento de
+cementita
+proeutéctica
+en bordes de
+grano. La
+pendiente se
+suaviza por
+calor latente.
+Coexisten:
+$$\gamma + \text{Fe}_3\text{C}_{pro}$$
+3. A
+$$727$$
+Unidad:
+$$\text{^{\circ}C}$$:
+Reacción
+eutectoide en
+meseta
+isotérmica
+(F = 0).
+$$\gamma \rightarrow \text{Perlita}$$
+Toda la
+austenita se
+transforma en
+láminas de
+ferrita y
+cementita.
+4. Por debajo
+de
+$$727$$
+Unidad:
+$$\text{^{\circ}C}$$:
+Enfriamiento
+continuo en
+estado sólido.
+Microestructura:
+Perlita rodeada
+de una fina
+red de
+cementita
+proeutéctica.
+
+---
+
+## Ejercicio 5
+
+### Enunciado
+Transcription:
+Problema 5
+(2 puntos)
+Se analiza una
+oblea semicon-
+ductora de
+Arseniuro de
+Galio (GaAs)
+utilizada para
+la fabricación
+de diodos
+láser. Este
+material
+cristaliza con
+estructura
+tipo
+Esfarelita. Las
+mediciones en
+laboratorio
+indican que la
+muestra real
+tiene una
+densidad de
+5,15 g/cm3.
+a. (1,25 puntos)
+Calcule la
+densidad de
+defectos
+Schottky
+presentes en
+dicha muestra.
+b. (0,75 puntos)
+Determine el
+porcentaje de
+masa que falta
+en el material
+respecto a su
+estado
+cristalino
+ideal debido a
+la presencia
+de dichos
+defectos.
+Datos:
+r(Ga) =
+0,126 nm;
+r(As) =
+0,118 nm;
+M(Ga) =
+69,72 g/mol;
+M(As) =
+74,92 g/mol;
+NA =
+6,022*10^23
+átomos/mol.
+
+### Solución Paso a Paso
+
+#### Paso previo:
+Calcular el
+parámetro de
+red ($a$) y la
+densidad
+teórica ideal
+($$\rho_{teor}$$):
+
+1. Relación
+geométrica:
+En estructura
+tipo Esfarelita,
+los cationes y
+aniones se
+tocan a la
+cuarta parte de
+la diagonal
+del cubo:
+$$r_{Ga} + r_{As} = \frac{\sqrt{3} \cdot a}{4}$$
+Sustituimos los
+radios:
+$$0,126 + 0,118 = \frac{\sqrt{3} \cdot a}{4}$$
+$$0,244 = \frac{\sqrt{3} \cdot a}{4}$$
+$$a = \frac{0,244 \cdot 4}{\sqrt{3}}$$
+$$a \approx 0,5635$$
+Unidad:
+$$\text{nm}$$
+$$a = 0,5635 \cdot 10^{-7}$$
+Unidad:
+$$\text{cm}$$
+
+2. Volumen de
+la celda ($V_c$):
+$$V_c = a^3$$
+$$V_c = (0,5635 \cdot 10^{-7})^3$$
+$$V_c \approx 1,7893 \cdot 10^{-22}$$
+Unidad:
+$$\text{cm}^3$$
+
+3. Densidad
+teórica ideal:
+La celda tipo
+Esfarelita
+tiene:
+$$n = 4$$
+unidades de
+GaAs.
+Masa molar:
+$$M_{GaAs} = 69,72 + 74,92$$
+$$M_{GaAs} = 144,64$$
+Unidad:
+$$\text{g/mol}$$
+Fórmula:
+$$\rho_{teor} = \frac{n \cdot M_{GaAs}}{V_c \cdot N_A}$$
+$$\rho_{teor} = \frac{4 \cdot 144,64}{1,7893 \cdot 10^{-22} \cdot 6,022 \cdot 10^{23}}$$
+$$\rho_{teor} \approx 5,369$$
+Unidad:
+$$\text{g/cm}^3$$
+
+#### Apartado a)
+
+1. Moles
+de GaAs
+reales:
+Usamos la
+densidad real:
+$$\rho_{real} = 5,15$$
+Unidad:
+$$\text{g/cm}^3$$
+Fórmula:
+$$n_{real} = \frac{\rho_{real} \cdot V_c \cdot N_A}{M_{GaAs}}$$
+Sustituimos:
+$$n_{real} = \frac{5,15 \cdot 1,7893 \cdot 10^{-22} \cdot 6,022 \cdot 10^{23}}{144,64}$$
+$$n_{real} \approx 3,8366$$
+
+2. Defectos
+Schottky por
+celda:
+Cada celda
+ideal tiene 4
+unidades de
+GaAs.
+Defectos:
+$$\text{Defectos} = 4 - 3,8366$$
+$$\text{Defectos} = 0,1634$$
+
+3. Densidad de
+defectos (por
+centímetro
+cúbico):
+$$\text{Densidad} = \frac{0,1634}{V_c}$$
+$$\text{Densidad} = \frac{0,1634}{1,7893 \cdot 10^{-22}}$$
+$$\text{Densidad} \approx 9,13 \cdot 10^{20}$$
+Unidad:
+$$\text{defectos/cm}^3$$
+
+#### Apartado b)
+
+El porcentaje
+de masa que
+falta respecto
+al cristal
+ideal es:
+$$\%\text{ Masa} = \frac{\rho_{teor} - \rho_{real}}{\rho_{teor}} \cdot 100$$
+$$\%\text{ Masa} = \frac{5,369 - 5,15}{5,369} \cdot 100$$
+$$\%\text{ Masa} \approx 4,08\%$$
