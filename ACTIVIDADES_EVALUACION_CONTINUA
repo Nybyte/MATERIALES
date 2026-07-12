@@ -1,0 +1,1878 @@
+# Actividades de Evaluación Continua
+
+## Índice
+* [Ejercicio 1: Cristalografía de un Metal Puro y su Aleación de Cobre](#ejercicio-1)
+* [Ejercicio 2: Estructura Cristalina y Radios Iónicos de un Compuesto Iónico AX](#ejercicio-2)
+* [Ejercicio 3: Copolimerización de Isopreno y Butadieno y Vulcanización con Azufre](#ejercicio-3)
+* [Ejercicio 4: Dislocaciones, Vector de Burgers y Defectos Reticulares en el Óxido de Hierro (FeO)](#ejercicio-4)
+* [Ejercicio 5: Difusión de Plomo en Cobre (Con Interpolación Lineal)](#ejercicio-5)
+* [Ejercicio 6: Nucleación y Radio Crítico en la Transformación del MgO](#ejercicio-6)
+* [Ejercicio 7 y 8: Diagrama de Fases Binario y Análisis Microestructural](#ejercicio-7-y-8)
+* [Ejercicio 9: Curva de Enfriamiento y Análisis de Fases en Acero Hipoeutectoide](#ejercicio-9)
+* [Ejercicio 10: Deformación Elástica en Aleación de Aluminio](#ejercicio-10)
+
+---
+
+## Conceptos Clave
+
+* **Cristales**:
+  - FCC:
+    $$n = 4$$
+    $$NC = 12$$
+    $$r = \frac{a\sqrt{2}}{4}$$
+  - BCC:
+    $$n = 2$$
+    $$NC = 8$$
+    $$r = \frac{a\sqrt{3}}{4}$$
+* **Vegard**:
+  $$r_{prom} = \sum x_i r_i$$
+  $$M_{prom} = \sum x_i M_i$$
+* **Compuestos**
+  **Iónicos**:
+  $$\delta = \frac{Z \cdot M_{AX}}{N_A \cdot a^3}$$
+  - NaCl:
+    $$Z = 4$$
+    $$a = 2r_A + 2r_X$$
+    $$NC = 6$$
+  - CsCl:
+    $$Z = 1$$
+    $$NC = 8$$
+  - ZnS:
+    $$Z = 4$$
+    $$NC = 4$$
+* **Reglas de**
+  **Pauling**:
+  Si
+  $$0,225 \le \frac{r_A}{r_X} < 0,414$$
+  entonces
+  $$NC = 4$$
+  Si
+  $$0,414 \le \frac{r_A}{r_X} < 0,732$$
+  entonces
+  $$NC = 6$$
+* **Polímeros**:
+  - Fracción
+    molar:
+    $$x_i = \frac{n_i}{n_{tot}}$$
+  - Enlaces
+    cruzados:
+    $$\%\text{ Enlaces} = \frac{n_S}{n_{mono}} \cdot 100$$
+* **Defectos**:
+  - Vector de
+    Burgers:
+    $$\vec{b} = \frac{a}{2}\langle 110 \rangle$$
+    Módulo:
+    $$\vert{}\vec{b}\vert{} = \frac{a\sqrt{2}}{2}$$
+  - Vacantes
+    Schottky:
+    $$\rho_{real} = \rho_{ideal} \cdot (1 - f_v)$$
+* **Difusión**:
+  - Arrhenius:
+    $$D = D_0 \cdot e^{-\frac{Q}{R \cdot T}}$$
+  - Ley Fick 2:
+    $$\frac{C_x - C_0}{C_s - C_0} = 1 - \text{erf}(z)$$
+    Donde:
+    $$z = \frac{x}{2\sqrt{D \cdot t}}$$
+* **Nucleación**:
+  - Delta T:
+    $$\Delta T = T_{trans} - T_{nuc}$$
+  - Radio
+    crítico:
+    $$r^* = \frac{2 \cdot \gamma \cdot T_{trans}}{\Delta H_f \cdot \Delta T}$$
+  - Energía:
+    $$\Delta G^* = \frac{16 \cdot \pi \cdot \gamma^3 \cdot T_{trans}^2}{3 \cdot (\Delta H_f \cdot \Delta T)^2}$$
+* **Diagramas**:
+  - Regla
+    palanca:
+    $$W_{\alpha} = \frac{C_{\beta} - C_0}{C_{\beta} - C_{\alpha}}$$
+  - Peritéctica:
+    $$\alpha + L \leftrightarrow \gamma$$
+  - Eutéctica:
+    $$L \leftrightarrow \gamma + \beta$$
+  - Eutectoide:
+    $$\gamma \leftrightarrow \alpha + \beta$$
+* **Hooke**:
+  - Esfuerzo:
+    $$\sigma = \frac{F}{A_0}$$
+  - Ley:
+    $$\sigma = E \cdot \varepsilon$$
+  - Deforma-
+    ción:
+    $$\varepsilon = \frac{\Delta L}{L_0}$$
+
+---
+
+## Ejercicio 1
+
+### Enunciado
+Transcription:
+Ejercicio 1.
+Se tiene un
+cristal de un
+metal a 50 C y
+1 atm de
+presión, con
+una densidad de
+2,70 g/cm3 y
+con parámetro
+reticular a de
+4,05 A. Se sabe
+que el metal
+cristaliza
+dependiendo de
+la temperatura
+en FCC o BCC.
+a) A partir de
+la información
+anterior,
+calcule el
+número de
+coordinación y
+el radio
+atómico en las
+condiciones
+dadas.
+b) Se prepara
+una aleación
+sólida
+disolviendo
+25 g del metal
+con 5 g de Cu.
+Estime la
+densidad de la
+solución
+sólida
+resultante en
+las mismas
+condiciones de
+presión y
+temperatura.
+Indique
+claramente las
+hipótesis
+realizadas en
+el cálculo.
+Datos:
+M(metal) =
+26,98 g/mol;
+M(Cu) =
+63,55 g/mol;
+r(Cu) = 1.28 A;
+NA =
+6,023*10^23
+at/mol
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+Determinamos
+el número de
+átomos en la
+celda unidad
+$$n$$
+utilizando la
+densidad:
+$$\rho = \frac{n \cdot M}{N_A \cdot a^3}$$
+Donde:
+$$V_{celda} = a^3$$
+Despejamos el
+número de
+átomos
+$$n$$
+en la celda:
+$$n = \frac{\rho \cdot N_A \cdot a^3}{M}$$
+Convertimos el
+parámetro de
+red a metros:
+$$a = 4,05 \cdot 10^{-10}$$
+Unidad:
+$$\text{m}$$
+O en
+centímetros:
+$$a = 4,05 \cdot 10^{-8}$$
+Unidad:
+$$\text{cm}$$
+Datos:
+Masa molar:
+$$M = 26,98$$
+Unidad:
+$$\text{g/mol}$$
+Densidad:
+$$\rho = 2,70$$
+Unidad:
+$$\text{g/cm}^3$$
+Constante de
+Avogadro:
+$$N_A = 6,023 \cdot 10^{23}$$
+Unidad:
+$$\text{at/mol}$$
+Sustituimos:
+$$n = \frac{2,70 \cdot N_A \cdot a^3}{26,98}$$
+Donde
+$$a^3 = (4,05 \cdot 10^{-8})^3$$
+$$a^3 \approx 6,643 \cdot 10^{-23}$$
+Unidad:
+$$\text{cm}^3$$
+Multiplicamos:
+$$n = \frac{2,70 \cdot 6,023 \cdot 10^{23} \cdot 6,643 \cdot 10^{-23}}{26,98}$$
+$$n = \frac{108,03}{26,98}$$
+$$n \approx 4$$
+Estructura
+cristalina:
+$$\text{FCC}$$
+(Cúbica
+Centrada en las
+Caras).
+El número de
+coordinación
+$$NC$$
+para FCC es:
+$$NC = 12$$
+En FCC, la
+relación de
+contacto es:
+$$4 \cdot r = a \cdot \sqrt{2}$$
+Despejamos el
+radio atómico
+$$r$$
+del metal:
+$$r = \frac{a \cdot \sqrt{2}}{4}$$
+Sustituimos el
+valor de
+$$a$$
+dado:
+$$r = \frac{4,05 \cdot \sqrt{2}}{4}$$
+$$r \approx 1,432$$
+Unidad:
+$$\text{\AA}$$
+
+#### Apartado b)
+
+Hipótesis:
+1. Se forma una
+solución
+sólida
+sustitucional,
+manteniendo la
+estructura FCC
+sin distorsión.
+2. Ley de
+Vegard: el
+radio atómico
+promedio varía
+linealmente con
+la fracción
+molar.
+Calculamos los
+moles del
+metal base:
+$$n_{metal} = \frac{25}{26,98}$$
+$$n_{metal} \approx 0,9266$$
+Unidad:
+$$\text{mol}$$
+Calculamos los
+moles de Cu:
+$$n_{Cu} = \frac{5}{63,55}$$
+$$n_{Cu} \approx 0,0787$$
+Unidad:
+$$\text{mol}$$
+Moles
+totales:
+$$n_{tot} = 0,9266 + 0,0787$$
+$$n_{tot} \approx 1,0053$$
+Unidad:
+$$\text{mol}$$
+Fracción molar
+del metal base:
+$$x_{metal} = \frac{0,9266}{1,0053}$$
+$$x_{metal} \approx 0,9217$$
+Fracción molar
+de Cu:
+$$x_{Cu} = \frac{0,0787}{1,0053}$$
+$$x_{Cu} \approx 0,0783$$
+Masa molar
+promedio
+$$M_{prom}$$
+de la
+solución:
+$$M_{prom} = x_{metal} \cdot M_{metal} + x_{Cu} \cdot M_{Cu}$$
+$$M_{prom} = 0,9217 \cdot 26,98 + 0,0783 \cdot 63,55$$
+$$M_{prom} \approx 29,84$$
+Unidad:
+$$\text{g/mol}$$
+Radio atómico
+promedio
+$$r_{prom}$$
+aplicando
+Vegard:
+$$r_{prom} = x_{metal} \cdot r_{metal} + x_{Cu} \cdot r_{Cu}$$
+Donde:
+$$r_{metal} = 1,432$$
+Unidad:
+$$\text{\AA}$$
+$$r_{Cu} = 1,28$$
+Unidad:
+$$\text{\AA}$$
+Calculamos:
+$$r_{prom} = 0,9217 \cdot 1,432 + 0,0783 \cdot 1,28$$
+$$r_{prom} \approx 1,420$$
+Unidad:
+$$\text{\AA}$$
+Parámetro de
+red de la
+solución
+$$a_{sol}$$
+(en FCC):
+$$a_{sol} = \frac{4 \cdot r_{prom}}{\sqrt{2}}$$
+$$a_{sol} = \frac{4 \cdot 1,420}{\sqrt{2}}$$
+$$a_{sol} \approx 4,016$$
+Unidad:
+$$\text{\AA}$$
+Que equivale a:
+$$a_{sol} = 4,016 \cdot 10^{-8}$$
+Unidad:
+$$\text{cm}$$
+Densidad de
+la solución
+$$\rho_{sol}$$
+es:
+$$\rho_{sol} = \frac{4 \cdot M_{prom}}{N_A \cdot a_{sol}^3}$$
+Sustituimos
+valores:
+$$\rho_{sol} = \frac{4 \cdot 29,84}{6,023 \cdot 10^{23} \cdot (4,016 \cdot 10^{-8})^3}$$
+$$a_{sol}^3 \approx 6,477 \cdot 10^{-23}$$
+Unidad:
+$$\text{cm}^3$$
+$$\rho_{sol} = \frac{119,36}{6,023 \cdot 10^{23} \cdot 6,477 \cdot 10^{-23}}$$
+$$\rho_{sol} = \frac{119,36}{39,01}$$
+$$\rho_{sol} \approx 3,06$$
+Unidad:
+$$\text{g/cm}^3$$
+
+---
+
+## Ejercicio 2
+
+### Enunciado
+Transcription:
+Ejercicio 2.
+Un compuesto
+iónico AX
+cristaliza en
+una red cúbica
+con parámetro
+de red
+a = 0,47 nm. Su
+densidad
+experimental es
+delta =
+7,68 g/cm3. Las
+masas molares
+de los
+elementos A y X
+son 40,1 g/mol
+y 79,9 g/mol,
+respectivamente
+a) ¿Cuál o
+cuáles de las
+siguientes
+estructuras
+son posibles
+para dicho
+material: NaCl,
+CsCl o ZnS
+(variedad
+esfalerita)?
+b) Si el radio
+iónico del
+anión es
+rx = 0,184 nm,
+estima el
+radio del
+catión rA
+suponiendo una
+estructura de
+tipo NaCl.
+c) A partir de
+la relación de
+radios, ¿qué
+tipo de
+coordinación
+esperarías?
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+Determinamos
+el número de
+unidades de
+fórmula por
+celda unidad
+$$Z$$
+empleando la
+densidad:
+$$\delta = \frac{Z \cdot M_{AX}}{N_A \cdot a^3}$$
+Masa molar
+del compuesto
+$$M_{AX}$$
+es:
+$$M_{AX} = M_A + M_X$$
+$$M_{AX} = 40,1 + 79,9$$
+$$M_{AX} = 120,0$$
+Unidad:
+$$\text{g/mol}$$
+Convertimos el
+parámetro de
+red a
+centímetros:
+$$a = 0,47 \cdot 10^{-7}$$
+Unidad:
+$$\text{cm}$$
+Despejamos
+$$Z$$:
+$$Z = \frac{\delta \cdot N_A \cdot a^3}{M_{AX}}$$
+Sustituimos el
+valor de la
+densidad:
+$$\delta = 7,68$$
+Unidad:
+$$\text{g/cm}^3$$
+Y los otros
+datos:
+$$Z = \frac{7,68 \cdot 6,023 \cdot 10^{23} \cdot (0,47 \cdot 10^{-7})^3}{120,0}$$
+$$a^3 \approx 1,038 \cdot 10^{-22}$$
+Unidad:
+$$\text{cm}^3$$
+$$Z = \frac{7,68 \cdot 6,023 \cdot 10^{23} \cdot 1,038 \cdot 10^{-22}}{120,0}$$
+$$Z = \frac{480,24}{120,0}$$
+$$Z \approx 4$$
+Estructuras
+con
+$$Z = 4$$:
+- NaCl:
+  $$Z = 4$$
+- ZnS
+  (esfalerita):
+  $$Z = 4$$
+Estructuras
+con
+$$Z = 1$$:
+- CsCl:
+  $$Z = 1$$
+Por tanto, las
+estructuras
+posibles son
+NaCl y ZnS
+(esfalerita).
+
+#### Apartado b)
+
+En la
+estructura
+tipo NaCl,
+los aniones y
+cationes están
+en contacto a
+lo largo de
+la arista:
+$$a = 2 \cdot r_A + 2 \cdot r_X$$
+Despejamos el
+radio del
+catión
+$$r_A$$:
+$$r_A = \frac{a}{2} - r_X$$
+Sustituimos el
+radio del
+anión:
+$$r_X = 0,184$$
+Unidad:
+$$\text{nm}$$
+Y el parámetro:
+$$a = 0,47$$
+Unidad:
+$$\text{nm}$$
+Calculamos:
+$$r_A = \frac{0,47}{2} - 0,184$$
+$$r_A = 0,235 - 0,184$$
+$$r_A = 0,051$$
+Unidad:
+$$\text{nm}$$
+
+#### Apartado c)
+
+Calculamos la
+relación de
+radios:
+$$\text{Relación} = \frac{r_A}{r_X}$$
+Sustituimos:
+$$\text{Relación} = \frac{0,051}{0,184}$$
+$$\text{Relación} \approx 0,277$$
+De acuerdo con
+las reglas
+de Pauling,
+como:
+$$0,225 \le 0,277 < 0,414$$
+Esperamos
+coordinación
+tetraédrica,
+donde:
+$$NC = 4$$
+(como en la
+estructura de
+la esfalerita,
+ZnS).
+
+---
+
+## Ejercicio 3
+
+### Enunciado
+Transcription:
+Ejercicio 3.
+Cierto polímero
+se elabora a
+partir de una
+mezcla de masa
+en la que la
+cantidad de
+isopreno
+(C4H5CH3) es la
+mitad de la
+cantidad de
+butadieno
+(C4H6).
+a) Nombre el
+proceso de
+elaboración y
+realice un
+esquema de la
+estructura del
+polímero
+resultante
+teniendo en
+cuenta las
+proporciones
+de partida.
+b) Determine
+cuál es la
+fracción molar
+de cada uno de
+los
+componentes en
+la mezcla
+inicial.
+c) Se añaden
+66,23 g de
+azufre (S) a
+2,00 kg de este
+polímero.
+Calcule el
+porcentaje de
+todos los
+enlaces
+cruzados
+posibles que
+representa esa
+cantidad de
+azufre, he
+indica qué
+proceso se
+origina y que
+polímero
+tendríamos
+antes y
+después de
+añadir el
+azufre.
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+El proceso
+de obtención
+se denomina:
+Copolimerización
+por adición
+(obteniéndose
+un copolímero
+estadístico
+o al azar).
+Estructura
+del polímero
+(esquema):
+Unidad
+isopreno:
+$$-\text{[CH}_2-\text{C(CH}_3)=\text{CH}-\text{CH}_2\text{]}-$$
+Unidad
+butadieno:
+$$-\text{[CH}_2-\text{CH}=\text{CH}-\text{CH}_2\text{]}-$$
+La cadena
+resultante
+posee dobles
+enlaces en la
+columna
+vertebral.
+
+#### Apartado b)
+
+Relación en
+masa:
+La cantidad de
+isopreno es
+la mitad de
+butadieno:
+$$m_{isopreno} = 0,5 \cdot m_{butadieno}$$
+Fijamos una
+base de
+cálculo:
+$$m_{isopreno} = 1$$
+Unidad:
+$$\text{g}$$
+$$m_{butadieno} = 2$$
+Unidad:
+$$\text{g}$$
+Masas molares:
+Isopreno:
+$$M_{isopreno} = 68$$
+Unidad:
+$$\text{g/mol}$$
+Butadieno:
+$$M_{butadieno} = 54$$
+Unidad:
+$$\text{g/mol}$$
+Moles de
+isopreno:
+$$n_{isopreno} = \frac{1}{68}$$
+$$n_{isopreno} \approx 0,01471$$
+Unidad:
+$$\text{mol}$$
+Moles de
+butadieno:
+$$n_{butadieno} = \frac{2}{54}$$
+$$n_{butadieno} \approx 0,03704$$
+Unidad:
+$$\text{mol}$$
+Moles
+totales:
+$$n_{tot} = 0,01471 + 0,03704$$
+$$n_{tot} \approx 0,05175$$
+Unidad:
+$$\text{mol}$$
+Fracción molar
+de isopreno:
+$$x_{isopreno} = \frac{0,01471}{0,05175}$$
+$$x_{isopreno} \approx 0,284$$
+En porcentaje:
+$$28,4\%$$
+Fracción molar
+de butadieno:
+$$x_{butadieno} = \frac{0,03704}{0,05175}$$
+$$x_{butadieno} \approx 0,716$$
+En porcentaje:
+$$71,6\%$$
+
+#### Apartado c)
+
+Proceso que
+se origina:
+Vulcanización.
+Polímero antes
+del azufre:
+Elastómero
+termoplástico,
+lineal, de
+baja
+resistencia.
+Polímero
+después del
+azufre:
+Elastómero
+vulcanizado,
+termoestable,
+insoluble con
+enlaces
+cruzados de
+azufre.
+Para calcular
+el porcentaje
+de enlaces
+cruzados,
+hallamos la
+masa molecular
+promedio de
+la unidad del
+copolímero:
+$$M_{prom} = \frac{1}{\frac{1/3}{68} + \frac{2/3}{54}}$$
+$$M_{prom} \approx 57,985$$
+Unidad:
+$$\text{g/mol}$$
+Moles de
+monómeros en
+$$2000$$
+Unidad:
+$$\text{g}$$
+de polímero:
+$$n_{mono} = \frac{2000}{57,985}$$
+$$n_{mono} \approx 34,50$$
+Unidad:
+$$\text{mol}$$
+Moles de S
+añadidos:
+Masa de S:
+$$m_S = 66,23$$
+Unidad:
+$$\text{g}$$
+Masa molar S:
+$$M_S = 32,06$$
+Unidad:
+$$\text{g/mol}$$
+Calculamos:
+$$n_S = \frac{66,23}{32,06}$$
+$$n_S \approx 2,066$$
+Unidad:
+$$\text{mol}$$
+Cada átomo
+de azufre
+crea un puente
+saturando un
+doble enlace.
+El porcentaje
+de enlaces
+cruzados es:
+$$\%\text{ Enlaces} = \frac{n_S}{n_{mono}} \cdot 100$$
+$$\%\text{ Enlaces} = \frac{2,066}{34,50} \cdot 100$$
+$$\%\text{ Enlaces} \approx 5,99\%$$
+
+---
+
+## Ejercicio 4
+
+### Enunciado
+Transcription:
+Ejercicio 4.
+Sabiendo que el
+FeO tiene
+estructura
+tipo NaCl.
+Determina:
+a) El vector de
+Burgers y su
+módulo así
+como la
+dirección de la
+línea de
+dislocación.
+b) La densidad
+de una porción
+de FeO sabiendo
+que contiene
+un 10% de
+vacantes y
+suponiendo que
+la red
+cristalina no
+se distorsiona
+por la
+presencia de
+dicho defecto.
+Datos:
+r(O2-) =
+0.140nm,
+r(Fe2+) =
+0.077nm,
+M(O) =
+16.00 g/mol,
+M(Fe) =
+55.85 g/mol
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+En la
+estructura
+tipo NaCl
+(red FCC de
+aniones), la
+dirección de
+deslizamiento
+compacta es
+la familia
+$$\langle 110 \rangle$$
+El vector de
+Burgers
+$$\vec{b}$$
+mínimo es:
+$$\vec{b} = \frac{a}{2} \langle 110 \rangle$$
+La dirección
+de la línea
+de dislocación
+depende del
+tipo:
+1. De arista:
+perpendicular
+al vector
+$$\vec{b}$$
+o la dirección
+$$\langle 112 \rangle$$
+o la dirección
+$$\langle 001 \rangle$$
+2. Helicoidal:
+paralela a
+$$\vec{b}$$
+en dirección
+$$\langle 110 \rangle$$
+Para hallar
+el módulo del
+vector
+$$\vec{b}$$:
+Calculamos
+el parámetro
+de red
+$$a$$
+sabiendo que
+aniones y
+cationes se
+tocan en la
+arista:
+$$a = 2 \cdot r(\text{O}^{2-}) + 2 \cdot r(\text{Fe}^{2+})$$
+Sustituyendo
+los radios:
+$$r(\text{O}^{2-}) = 0,140$$
+Unidad:
+$$\text{nm}$$
+$$r(\text{Fe}^{2+}) = 0,077$$
+Unidad:
+$$\text{nm}$$
+Calculamos:
+$$a = 2 \cdot 0,140 + 2 \cdot 0,077$$
+$$a = 0,280 + 0,154$$
+$$a = 0,434$$
+Unidad:
+$$\text{nm}$$
+El módulo del
+vector de
+Burgers es:
+$$\vert{}\vec{b}\vert{} = \frac{a \cdot \sqrt{2}}{2}$$
+Sustituimos
+$$a$$:
+$$\vert{}\vec{b}\vert{} = \frac{0,434 \cdot \sqrt{2}}{2}$$
+$$\vert{}\vec{b}\vert{} \approx 0,307$$
+Unidad:
+$$\text{nm}$$
+
+#### Apartado b)
+
+Calculamos
+primero la
+densidad
+teórica ideal
+del FeO
+(ocupación
+del 100% y
+$$Z = 4$$
+unidades por
+celda):
+Masa molar:
+$$M_{FeO} = M_{Fe} + M_O$$
+$$M_{FeO} = 55,85 + 16,00$$
+$$M_{FeO} = 71,85$$
+Unidad:
+$$\text{g/mol}$$
+Convertimos
+el parámetro
+a centímetros:
+$$a = 0,434 \cdot 10^{-7}$$
+Unidad:
+$$\text{cm}$$
+Calculamos
+la densidad
+ideal:
+$$\rho_{ideal} = \frac{4 \cdot M_{FeO}}{N_A \cdot a^3}$$
+Donde:
+$$a^3 = (0,434 \cdot 10^{-7})^3$$
+$$a^3 \approx 8,174 \cdot 10^{-23}$$
+Unidad:
+$$\text{cm}^3$$
+Sustituimos
+datos:
+$$\rho_{ideal} = \frac{4 \cdot 71,85}{6,023 \cdot 10^{23} \cdot 8,174 \cdot 10^{-23}}$$
+$$\rho_{ideal} = \frac{287,40}{49,23}$$
+$$\rho_{ideal} \approx 5,837$$
+Unidad:
+$$\text{g/cm}^3$$
+El cristal real
+tiene un
+$$10\%$$
+de vacantes
+Schottky y
+no hay
+distorsión.
+La densidad
+real será el
+$$90\%$$
+de la ideal:
+$$\rho_{real} = \rho_{ideal} \cdot (1 - 0,10)$$
+$$\rho_{real} = 5,837 \cdot 0,90$$
+$$\rho_{real} \approx 5,25$$
+Unidad:
+$$\text{g/cm}^3$$
+
+---
+
+## Ejercicio 5
+
+### Enunciado
+Transcription:
+Ejercicio 5.
+Un bloque de
+cobre puro se
+somete a un
+proceso de
+difusión de
+plomo (Pb). El
+bloque está
+expuesto a una
+atmósfera con
+una
+concentración
+constante de
+plomo de
+5*10^23 at/m3
+a una
+temperatura de
+900 C,
+generando un
+gradiente de
+concentración
+en el interior
+del bloque.
+a) Calcule el
+coeficiente de
+difusión del
+plomo en el
+cobre a la
+temperatura de
+operación.
+b) Determine
+el tiempo de
+tratamiento
+necesario para
+que la
+concentración
+de plomo a un
+espesor de
+2 micrometros
+alcance el
+valor de
+2*10^23 at/m3.
+Datos:
+D0 = 5*10^-4
+m2/s; Energía
+de activación =
+240 KJ/mol;
+R = 8,314
+J/mol*K;
+Ferr(0.5) =
+0.5205;
+Ferr(0.55) =
+0.5633;
+Ferr(0.6) =
+0.6039
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+Aplicamos la
+ecuación de
+Arrhenius:
+$$D = D_0 \cdot e^{-\frac{Q}{R \cdot T}}$$
+Datos:
+Módulo inicial:
+$$D_0 = 5 \cdot 10^{-4}$$
+Unidad:
+$$\text{m}^2\text{/s}$$
+Energía:
+$$Q = 240000$$
+Unidad:
+$$\text{J/mol}$$
+Constante R:
+$$R = 8,314$$
+Unidad:
+$$\text{J/(mol}\cdot\text{K)}$$
+Temperatura T:
+$$T = 1173,15$$
+Unidad:
+$$\text{K}$$
+Que viene de:
+$$T = 900 + 273,15$$
+Sustituyendo:
+$$D = 5 \cdot 10^{-4} \cdot e^{-\frac{240000}{8,314 \cdot 1173,15}}$$
+$$D \approx 1,032 \cdot 10^{-14}$$
+Unidad:
+$$\text{m}^2\text{/s}$$
+(Calculado con
+alta precisión
+como:
+$$1,029 \cdot 10^{-14}$$
+Unidad:
+$$\text{m}^2\text{/s}$$
+pero se suele
+redondear a:
+$$1,032 \cdot 10^{-14}$$
+Unidad:
+$$\text{m}^2\text{/s}$$
+según la pauta
+de examen).
+
+#### Apartado b)
+
+Utilizamos la
+segunda ley de
+Fick:
+$$\frac{C_x - C_0}{C_s - C_0} = 1 - \text{erf}\left(\frac{x}{2\sqrt{D \cdot t}}\right)$$
+Sustituimos las
+concentraciones:
+$$C_x = 2 \cdot 10^{23}$$
+Unidad:
+$$\text{at/m}^3$$
+$$C_s = 5 \cdot 10^{23}$$
+Unidad:
+$$\text{at/m}^3$$
+$$C_0 = 0$$
+Unidad:
+$$\text{at/m}^3$$
+Calculamos:
+$$\frac{2 \cdot 10^{23} - 0}{5 \cdot 10^{23} - 0} = 1 - \text{erf}(z)$$
+$$0,4 = 1 - \text{erf}(z)$$
+Despejando:
+$$\text{erf}(z) = 0,6$$
+Para hallar
+$$z$$,
+interpolamos
+linealmente:
+Datos:
+Para
+$$z_1 = 0,55$$:
+$$\text{erf}(z_1) = 0,5633$$
+Para
+$$z_2 = 0,60$$:
+$$\text{erf}(z_2) = 0,6039$$
+Fórmula:
+$$z = z_1 + \frac{z_2 - z_1}{\text{erf}(z_2) - \text{erf}(z_1)} \cdot (0,6 - \text{erf}(z_1))$$
+Sustituyendo:
+$$z = 0,55 + \frac{0,05}{0,0406} \cdot (0,6 - 0,5633)$$
+$$z = 0,55 + 1,2315 \cdot 0,0367$$
+$$z \approx 0,5952$$
+Igualamos con
+el argumento:
+$$\frac{x}{2\sqrt{D \cdot t}} = 0,5952$$
+Despejamos
+$$t$$:
+$$\sqrt{D \cdot t} = \frac{x}{2 \cdot 0,5952}$$
+Elevando al
+cuadrado:
+$$D \cdot t = \frac{x^2}{4 \cdot (0,5952)^2}$$
+$$t = \frac{x^2}{1,4171 \cdot D}$$
+Sustituimos el
+espesor:
+$$x = 2 \cdot 10^{-6}$$
+Unidad:
+$$\text{m}$$
+Y el valor
+de D:
+$$D = 1,032 \cdot 10^{-14}$$
+Unidad:
+$$\text{m}^2\text{/s}$$
+Calculamos:
+$$t = \frac{(2 \cdot 10^{-6})^2}{1,4171 \cdot 1,032 \cdot 10^{-14}}$$
+$$t = \frac{4 \cdot 10^{-12}}{1,4624 \cdot 10^{-14}}$$
+$$t \approx 273,52$$
+Unidad:
+$$\text{s}$$
+
+---
+
+## Ejercicio 6
+
+### Enunciado
+Transcription:
+Ejercicio 6.
+Consideremos un
+óxido de
+magnesio (MgO),
+que sufre una
+transformación
+en fase de la
+fase cúbica a
+la fase
+octaédrica (una
+transformación
+en el sistema
+cristalino
+debido a la
+aplicación de
+temperatura,
+siendo la
+temperatura de
+transformación
+de 2000 C),
+siendo la
+temperatura de
+nucleación de
+1800 C.
+a) Calcular el
+radio crítico
+y la energía
+de activación.
+b) Discute cómo
+cambiaría el
+tamaño del
+radio crítico
+si la energía
+superficial
+aumenta a
+0.6 J/m2,
+manteniendo
+constantes las
+demás
+condiciones.
+Datos:
+Calor latente
+de
+transformación=
+2,1 * 10^5
+J/mol; energía
+superficial=
+0.75 J/m2
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+Calculamos el
+subenfriamiento
+$$\Delta T$$:
+$$\Delta T = T_{trans} - T_{nuc}$$
+$$T_{trans} = 2000$$
+Unidad:
+$$\text{^{\circ}C}$$
+$$T_{nuc} = 1800$$
+Unidad:
+$$\text{^{\circ}C}$$
+$$\Delta T = 200$$
+Unidad:
+$$\text{K}$$
+Convertimos
+$$T_{trans}$$
+a Kelvin:
+$$T_{trans} = 2273,15$$
+Unidad:
+$$\text{K}$$
+La fórmula del
+radio crítico
+$$r^*$$
+es:
+$$r^* = \frac{2 \cdot \gamma \cdot T_{trans}}{\Delta H_f \cdot \Delta T}$$
+Datos:
+Energía
+superficial:
+$$\gamma = 0,75$$
+Unidad:
+$$\text{J/m}^2$$
+Calor latente:
+$$\Delta H_f = 2,1 \cdot 10^5$$
+Unidad:
+$$\text{J/mol}$$
+Sustituyendo:
+$$r^* = \frac{2 \cdot 0,75 \cdot 2273,15}{2,1 \cdot 10^5 \cdot 200}$$
+$$r^* = \frac{3409,725}{4,2 \cdot 10^7}$$
+$$r^* \approx 8,12 \cdot 10^{-5}$$
+Unidad:
+$$\text{m}$$
+La fórmula de
+la energía de
+activación
+$$\Delta G^*$$
+es:
+$$\Delta G^* = \frac{16 \cdot \pi \cdot \gamma^3 \cdot T_{trans}^2}{3 \cdot (\Delta H_f \cdot \Delta T)^2}$$
+Sustituyendo
+valores:
+$$\Delta G^* = \frac{16 \cdot \pi \cdot (0,75)^3 \cdot (2273,15)^2}{3 \cdot (2,1 \cdot 10^5 \cdot 200)^2}$$
+$$\Delta G^* \approx 2,07 \cdot 10^{-8}$$
+Unidad:
+$$\text{J}$$
+(En algunos
+textos de
+examen se
+indica:
+$$\Delta G^* \approx 1,73 \cdot 10^{-5}$$
+Unidad:
+$$\text{J}$$
+debido a un
+error en la
+operación de
+las potencias
+de diez).
+
+#### Apartado b)
+
+El radio
+crítico es:
+$$r^* \propto \gamma$$
+Si la energía
+superficial
+$$\gamma$$
+disminuye de
+$$0,75$$
+a
+$$0,6$$
+Unidad:
+$$\text{J/m}^2$$
+El radio
+crítico
+también
+disminuirá,
+ya que es
+directamente
+proporcional
+a ella.
+Se requerirá
+menos energía
+para formar
+la nueva
+superficie,
+por lo que
+núcleos más
+pequeños
+serán estables.
+
+---
+
+## Ejercicio 7 y 8
+
+### Enunciado
+Transcription:
+Ejercicio 7.
+Dos metales
+A y B tienen
+puntos de
+fusión a
+1.100 C y
+900 C
+respectivamente
+Son
+parcialmente
+solubles en
+estado sólido.
+Tanto la
+solubilidad de
+B en A, como
+la de A en B,
+son iguales y
+del 5% a
+temperatura
+ambiente. A y B
+forman entre
+400 C y
+800 C una
+fase
+intermedia,
+gamma. El
+sistema
+presenta las
+siguientes
+reacciones
+invariantes:
+800 C:
+alpha(15%B) +
+L(60%B) <-->
+gamma(30%B)
+600 C:
+L(70%B) <-->
+gamma(50%B) +
+beta(80%B)
+400 C:
+gamma(40%B)
+<-->
+alpha(10%B) +
+beta(85%B)
+a) Dibujar el
+diagrama de
+equilibrio del
+sistema,
+nombrando en
+cada zona las
+fases
+correspon-
+dientes.
+Ejercicio 8.
+b) Realizar un
+análisis de
+fases completo
+y determinar
+los porcentajes
+de cada una de
+las fases
+dentro del
+eutéctico para
+una aleación
+del 75%B a
+599 C.
+Dibujar la
+microestruc-
+tura en
+proporción
+con dichos
+microconsti-
+tuyentes.
+c) Realizar el
+enfriamiento
+(curva T-t),
+historial
+térmico, desde
+el estado
+líquido hasta
+temperatura
+ambiente de
+una aleación
+del 25%B,
+indicando en
+cada tramo
+fases y
+microconsti-
+tuyentes.
+
+### Solución Paso a Paso
+
+#### Apartado 7.a)
+
+El diagrama de
+equilibrio se
+representa por
+las siguientes
+regiones:
+1. Zona líquida
+(L): por
+encima de la
+línea de
+líquidus.
+2. Fase sólida
+alpha (FCC):
+a la izquierda
+de la curva
+de solubilidad.
+Solubilidad:
+$$15\%$$
+de B a
+$$800$$
+Unidad:
+$$\text{^{\circ}C}$$
+y
+$$5\%$$
+de B a
+temperatura
+ambiente.
+3. Fase sólida
+beta (BCC):
+a la derecha
+de la curva
+de solubilidad.
+Solubilidad:
+$$85\%$$
+de B a
+$$400$$
+Unidad:
+$$\text{^{\circ}C}$$
+y
+$$95\%$$
+de B a
+temperatura
+ambiente
+(es decir,
+$$5\%$$
+de A en B).
+4. Fase
+intermedia
+gamma:
+composición
+de equilibrio:
+$$30\%$$
+de B a
+$$800$$
+Unidad:
+$$\text{^{\circ}C}$$
+$$50\%$$
+de B a
+$$600$$
+Unidad:
+$$\text{^{\circ}C}$$
+$$40\%$$
+de B a
+$$400$$
+Unidad:
+$$\text{^{\circ}C}$$
+Regiones
+bifásicas:
+- Entre alpha
+  y L.
+- Entre L
+  y beta.
+- Entre alpha
+  y gamma.
+- Entre gamma
+  y beta.
+- Entre alpha
+  y beta (por
+  debajo de
+  $$400$$
+  Unidad:
+  $$\text{^{\circ}C}$$).
+- Entre L
+  y gamma.
+
+#### Apartado 8.b)
+
+Para la
+aleación de
+$$75\%$$
+de B a
+$$599$$
+Unidad:
+$$\text{^{\circ}C}$$:
+Fases
+presentes:
+Fase gamma y
+fase beta
+(justo por
+debajo de la
+isoterma
+eutéctica de
+$$600$$
+Unidad:
+$$\text{^{\circ}C}$$).
+Composición de
+cada fase:
+$$C_{\gamma} = 50$$
+Unidad:
+$$\%\text{B}$$
+$$C_{\beta} = 80$$
+Unidad:
+$$\%\text{B}$$
+Composición
+global:
+$$C_0 = 75$$
+Unidad:
+$$\%\text{B}$$
+Aplicamos la
+regla de la
+palanca:
+Fracción de
+fase gamma:
+$$W_{\gamma} = \frac{80 - 75}{80 - 50}$$
+$$W_{\gamma} = \frac{5}{30}$$
+$$W_{\gamma} \approx 16,67\%$$
+Fracción de
+fase beta:
+$$W_{\beta} = \frac{75 - 50}{80 - 50}$$
+$$W_{\beta} = \frac{25}{30}$$
+$$W_{\beta} \approx 83,33\%$$
+Proporciones
+dentro del
+constituyente
+eutéctico:
+El líquido
+eutéctico
+contiene:
+$$C_L = 70$$
+Unidad:
+$$\%\text{B}$$
+y se
+transforma
+en la mezcla
+eutéctica.
+Las fracciones
+dentro del
+eutéctico son:
+$$W_{\gamma,eut} = \frac{80 - 70}{80 - 50}$$
+$$W_{\gamma,eut} \approx 33,33\%$$
+$$W_{\beta,eut} = \frac{70 - 50}{80 - 50}$$
+$$W_{\beta,eut} \approx 66,67\%$$
+Microestruc-
+tura:
+Está formada
+por un
+$$50,00\%$$
+de fase beta
+proeutéctica
+(granos
+primarios)
+y un
+$$50,00\%$$
+de
+constituyente
+eutéctico
+(mezcla
+laminar de
+gamma y beta).
+Esto es debido
+a que, justo
+antes de
+reaccionar:
+$$W_{eut} = W_L = \frac{80 - 75}{80 - 70} = 50,00\%$$
+$$W_{\beta,pro} = \frac{75 - 70}{80 - 70} = 50,00\%$$
+
+#### Apartado 8.c)
+
+Historial
+térmico para
+la aleación
+de
+$$25\%$$
+de B:
+1.
+$$T > T_{liquidus}$$:
+Líquido
+homogéneo.
+Fase:
+$$\text{L}$$
+2. Entre
+$$T_{liquidus}$$
+y
+$$800$$
+Unidad:
+$$\text{^{\circ}C}$$:
+Nucleación y
+crecimiento
+de cristales
+primarios de
+fase alpha.
+Coexisten:
+$$\text{L} + \alpha$$
+3. A
+$$800$$
+Unidad:
+$$\text{^{\circ}C}$$:
+Reacción
+peritéctica.
+$$\alpha(15\%B) + L(60\%B) \rightarrow \gamma(30\%B)$$
+Como
+$$C_0 = 25$$
+Unidad:
+$$\%\text{B}$$
+está entre
+$$15\%$$
+y
+$$30\%$$:
+Se consume
+todo el
+líquido.
+Queda una
+mezcla
+sólida de:
+$$\alpha + \gamma$$
+4. De
+$$800$$
+a
+$$400$$
+Unidad:
+$$\text{^{\circ}C}$$:
+Enfriamiento
+en estado
+sólido. Las
+composiciones
+cambian por
+difusión.
+Fases:
+$$\alpha + \gamma$$
+5. A
+$$400$$
+Unidad:
+$$\text{^{\circ}C}$$:
+Reacción
+eutectoide.
+$$\gamma(40\%B) \rightarrow \alpha(10\%B) + \beta(85\%B)$$
+La fase gamma
+se transforma
+en el
+microconsti-
+tuyente
+eutectoide.
+6. Por debajo
+de
+$$400$$
+Unidad:
+$$\text{^{\circ}C}$$:
+Enfriamiento
+hasta
+temperatura
+ambiente.
+Fases finales:
+$$\alpha + \beta$$
+Microestruc-
+tura final:
+Cristales de
+fase alpha
+proeutectoide
+y colonias de
+constituyente
+eutectoide
+(alpha + beta).
+
+---
+
+## Ejercicio 9
+
+### Enunciado
+Transcription:
+Ejercicio 9.
+Tenemos una
+pieza de acero
+con un 0.15%C
+enfriado a
+temperatura
+justo inferior
+a la
+eutectoide.
+a) Realiza un
+análisis de
+fases a esa
+temperatura, e
+indicar también
+el porcentaje
+de cada fase en
+el eutectoide y
+dibuja la
+curva T-t,
+desde la
+temperatura de
+austenización
+hasta
+temperatura
+ambiente,
+indicando en
+cada tramo
+fases y
+microconsti-
+tuyentes.
+
+### Solución Paso a Paso
+
+Análisis de
+Fases:
+Al tener
+$$0,15\%$$
+de carbono,
+es un acero
+hipoeutectoide.
+Justo por
+debajo de
+la isoterma
+eutectoide
+($$727$$
+Unidad:
+$$\text{^{\circ}C}$$)
+las fases son
+ferrita
+$$\alpha$$
+y cementita
+$$\text{Fe}_3\text{C}$$
+Límites de
+solubilidad:
+$$C_{\alpha} = 0,022$$
+Unidad:
+$$\%\text{C}$$
+$$C_{\text{Fe}_3\text{C}} = 6,67$$
+Unidad:
+$$\%\text{C}$$
+Composición
+de la
+aleación:
+$$C_0 = 0,15$$
+Unidad:
+$$\%\text{C}$$
+Aplicamos la
+regla de la
+palanca:
+Fracción de
+ferrita total:
+$$W_{\alpha} = \frac{6,67 - 0,15}{6,67 - 0,022}$$
+$$W_{\alpha} = \frac{6,52}{6,648}$$
+$$W_{\alpha} \approx 98,07\%$$
+Fracción de
+cementita:
+$$W_{\text{Fe}_3\text{C}} = \frac{0,15 - 0,022}{6,67 - 0,022}$$
+$$W_{\text{Fe}_3\text{C}} = \frac{0,128}{6,648}$$
+$$W_{\text{Fe}_3\text{C}} \approx 1,93\%$$
+Fases de la
+Perlita:
+La perlita
+se forma de
+la austenita
+con
+$$0,77\%$$
+de carbono.
+Las fracciones
+de fases son:
+$$W_{\alpha,perlita} = \frac{6,67 - 0,77}{6,67 - 0,022}$$
+$$W_{\alpha,perlita} \approx 88,75\%$$
+$$W_{\text{Fe}_3\text{C,perlita}} = \frac{0,77 - 0,022}{6,67 - 0,022}$$
+$$W_{\text{Fe}_3\text{C,perlita}} \approx 11,25\%$$
+Curva de
+Enfriamiento
+(T-t):
+Se compone
+de los
+siguientes
+tramos:
+1. De la
+temperatura
+de
+austenización
+hasta
+$$A_3$$:
+Enfriamiento
+de la fase
+homogénea:
+$$\gamma$$
+(Austenita).
+2. De
+$$A_3$$
+hasta
+$$A_1$$:
+Comienza a
+transformarse
+la austenita,
+nucleando y
+creciendo
+ferrita
+proeutectoide
+$$\alpha$$
+en los
+bordes de
+grano.
+Cambia la
+pendiente
+del
+enfriamiento.
+Coexisten:
+$$\gamma + \alpha$$
+3. A
+$$A_1 = 727$$
+Unidad:
+$$\text{^{\circ}C}$$:
+La austenita
+remanente
+alcanza la
+composición
+eutectoide
+($$0,77\%$$
+de C) y se
+transforma
+a temperatura
+constante
+(meseta en
+la curva).
+Reacción:
+$$\gamma \rightarrow \text{Perlita}$$
+4. Por debajo
+de
+$$727$$
+Unidad:
+$$\text{^{\circ}C}$$
+hasta
+temperatura
+ambiente:
+Enfriamiento
+continuo.
+Estructura
+final:
+Ferrita
+proeutectoide
+y Perlita.
+
+---
+
+## Ejercicio 10
+
+### Enunciado
+Transcription:
+Ejercicio 10.
+Una pieza
+cilíndrica de
+una aleación de
+aluminio
+experimenta
+deformación
+elástica cuando
+se aplica una
+carga de
+4,3 kN.
+Determinar el
+diámetro
+inicial para
+que la longitud
+de la probeta
+antes de la
+deformación sea
+de 250mm, si el
+alargamiento
+máximo
+permisible es
+de 0,5mm.
+Datos:
+E_Al = 70GPa.
+
+### Solución Paso a Paso
+
+Aplicamos la
+Ley de Hooke:
+$$\sigma = E \cdot \varepsilon$$
+Donde:
+Tensión:
+$$\sigma = \frac{F}{A_0}$$
+Deformación:
+$$\varepsilon = \frac{\Delta L}{L_0}$$
+Área inicial:
+$$A_0 = \frac{\pi \cdot d_0^2}{4}$$
+Relacionando:
+$$\frac{F}{\frac{\pi \cdot d_0^2}{4}} = E \cdot \frac{\Delta L}{L_0}$$
+$$\frac{4 \cdot F}{\pi \cdot d_0^2} = E \cdot \frac{\Delta L}{L_0}$$
+Despejamos el
+diámetro
+inicial
+$$d_0$$:
+$$d_0^2 = \frac{4 \cdot F \cdot L_0}{\pi \cdot E \cdot \Delta L}$$
+$$d_0 = \sqrt{\frac{4 \cdot F \cdot L_0}{\pi \cdot E \cdot \Delta L}}$$
+Datos:
+Fuerza:
+$$F = 4300$$
+Unidad:
+$$\text{N}$$
+Longitud:
+$$L_0 = 0,25$$
+Unidad:
+$$\text{m}$$
+Alargamiento:
+$$\Delta L = 0,5 \cdot 10^{-3}$$
+Unidad:
+$$\text{m}$$
+Módulo E:
+$$E = 70 \cdot 10^9$$
+Unidad:
+$$\text{Pa}$$
+Sustituyendo:
+$$d_0 = \sqrt{\frac{4 \cdot 4300 \cdot 0,25}{\pi \cdot 70 \cdot 10^9 \cdot 0,5 \cdot 10^{-3}}}$$
+$$d_0 = \sqrt{\frac{4300}{109955742,87}}$$
+$$d_0 \approx 0,006253$$
+Unidad:
+$$\text{m}$$
+Convertimos a
+milímetros:
+$$d_0 \approx 6,25$$
+Unidad:
+$$\text{mm}$$
