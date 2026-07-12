@@ -1,0 +1,631 @@
+# Cuadernillo Tema 3 Problemas
+
+## Índice
+* [Ejercicio 1: Densidad Teórica de NaCl y Concentración Lineal en <110>](#ejercicio-1)
+* [Ejercicio 2: Compuesto AX tipo ZnS, Radios Iónicos y Empaquetamientos](#ejercicio-2)
+* [Ejercicio 3: Razón de Cationes y Vacantes en MgO con Cr2O3](#ejercicio-3)
+* [Ejercicio 4: Número de Iones de Sílice en Celda Cúbica](#ejercicio-4)
+
+---
+
+## Conceptos Clave
+
+* **NaCl (AX)**:
+  - Parámetro a:
+    $$a = 2 \cdot (r_c + r_a)$$
+  - Volumen:
+    $$V_c = a^3$$
+  - Masa celda:
+    $$M_c = \frac{4 \cdot (M_c + M_a)}{N_A}$$
+* **Concentración**:
+  - Lineal:
+    $$\rho_L = \frac{\text{Nº iones}}{L}$$
+  - Diagonal:
+    $$L = \sqrt{2} \cdot a$$
+* **ZnS**:
+  - Parámetro a:
+    $$r_c + r_a = \frac{\sqrt{3} \cdot a}{4}$$
+  - Empaq. sup.:
+    $$FE_s = \frac{A_{ocup}}{A_p}$$
+  - Empaq. lin.:
+    $$FE_l = \frac{L_{ocup}}{L}$$
+* **Defectos**:
+  - Vacantes:
+    $$2 \cdot \text{Cr}^{3+} \implies 1\text{ vacante}$$
+
+---
+
+## Ejercicio 1
+
+### Enunciado
+Transcription:
+Ejercicio
+resuelto 3.3
+Para la
+estructura
+cristalina del
+NaCl, calcule:
+a) La densidad
+teórica.
+b) La concentra-
+ción atómica
+lineal de
+(i) iones sodio
+y (ii) iones
+cloruro,
+expresada en
+iones por
+nanómetro, a lo
+largo de las
+direcciones
+<110>.
+Datos:
+r(Na+) =
+0.095 nm;
+r(Cl-) =
+0.181 nm;
+M(Na) =
+22.99 g/mol;
+M(Cl) =
+35.45 g/mol;
+NA =
+6.022*10^23.
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+1. Parámetro de
+red ($a$):
+En estructura de
+NaCl (tipo AX),
+los cationes y
+aniones se
+tocan en las
+aristas:
+$$a = 2 \cdot (r_{Na^+} + r_{Cl^-})$$
+Sustituyendo:
+$$a = 2 \cdot (0,095 + 0,181)$$
+$$a = 0,552$$
+Unidad:
+$$\text{nm}$$
+$$a = 0,552 \cdot 10^{-7}$$
+Unidad:
+$$\text{cm}$$
+
+2. Volumen de
+la celda ($V_c$):
+$$V_c = a^3$$
+$$V_c = (0,552 \cdot 10^{-7})^3$$
+$$V_c \approx 1,682 \cdot 10^{-22}$$
+Unidad:
+$$\text{cm}^3$$
+
+3. Masa de la
+celda ($M_c$):
+Contiene 4
+iones de Na+
+y 4 de Cl-.
+Masa:
+$$M_c = \frac{4 \cdot M_{Na} + 4 \cdot M_{Cl}}{N_A}$$
+Sustituyendo:
+$$M_{Na} = 22,99$$
+Unidad:
+$$\text{g/mol}$$
+$$M_{Cl} = 35,45$$
+Unidad:
+$$\text{g/mol}$$
+$$N_A = 6,022 \cdot 10^{23}$$
+Unidad:
+$$\text{at/mol}$$
+Calculamos:
+$$M_c = \frac{4 \cdot 22,99 + 4 \cdot 35,45}{6,022 \cdot 10^{23}}$$
+$$M_c = \frac{233,76}{6,022 \cdot 10^{23}}$$
+$$M_c \approx 3,882 \cdot 10^{-22}$$
+Unidad:
+$$\text{g}$$
+
+4. Densidad
+teórica
+($$\delta$$):
+$$\delta = \frac{M_c}{V_c}$$
+$$\delta = \frac{3,882 \cdot 10^{-22}}{1,682 \cdot 10^{-22}}$$
+$$\delta \approx 2,31$$
+Unidad:
+$$\text{g/cm}^3$$
+
+#### Apartado b)
+
+1. Longitud
+de la línea
+($L$):
+En dirección
+$$\langle 110 \rangle$$
+(diagonal de
+cara):
+$$L = \sqrt{2} \cdot a$$
+$$L = \sqrt{2} \cdot 0,552$$
+$$L \approx 0,781$$
+Unidad:
+$$\text{nm}$$
+
+2. Conteo de
+iones de
+$$\text{Cl}^-$$:
+Trayectoria a
+través de
+esquinas y
+centro:
+- Vértice
+  inicial:
+$$1/2$$
+- Centro:
+$$1$$
+- Vértice
+  final:
+$$1/2$$
+Total:
+$$\text{Cl}^- = \frac{1}{2} + 1 + \frac{1}{2}$$
+$$\text{Cl}^- = 2$$
+Unidad:
+$$\text{iones}$$
+
+3. Concen-
+tración
+lineal:
+aniones
+$$\text{Cl}^-$$:
+$$[\text{Cl}^-]_{\langle 110 \rangle} = \frac{2}{0,781}$$
+$$[\text{Cl}^-]_{\langle 110 \rangle} \approx 2,56$$
+Unidad:
+$$\text{iones/nm}$$
+Por simetría,
+sodio
+$$\text{Na}^+$$
+es idéntico:
+$$[\text{Na}^+]_{\langle 110 \rangle} \approx 2,56$$
+Unidad:
+$$\text{iones/nm}$$
+
+---
+
+## Ejercicio 2
+
+### Enunciado
+Transcription:
+Problema
+propuesto 3.5
+Se tiene un
+hipotético
+compuesto iónico
+de tipo AX, con
+densidad
+4,61 g/cm3 y
+estructura
+cristalina de
+tipo ZnS
+(esfalerita).
+Señale:
+a) Los radios
+iónicos de los
+iones A+ y X-
+que forman el
+compuesto
+sabiendo que el
+volumen
+ocupado por los
+aniones es
+quince veces
+superior al
+ocupado por los
+cationes.
+b) La fracción
+de empaqueta-
+miento
+superficial en
+un plano del
+tipo {110}.
+c) La fracción
+de empaqueta-
+miento lineal
+de los aniones
+y de los
+cationes en la
+dirección
+<110>.
+Datos:
+M(A) =
+60 g/mol;
+M(X) =
+25 g/mol;
+NA =
+6,022*10^23.
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+1. Relación de
+radios por
+volúmenes:
+Volumen del
+anión es 15
+veces el del
+catión:
+$$V_{X^-} = 15 \cdot V_{A^+}$$
+$$\frac{4}{3} \cdot \pi \cdot r_{X^-}^3 = 15 \cdot \frac{4}{3} \cdot \pi \cdot r_{A^+}^3$$
+$$r_{X^-}^3 = 15 \cdot r_{A^+}^3$$
+$$r_{X^-} = 15^{1/3} \cdot r_{A^+}$$
+$$r_{X^-} \approx 2,4662 \cdot r_{A^+}$$
+
+2. Parámetro
+de red ($a$):
+ZnS es tipo
+FCC con:
+$$n = 4$$
+unidades por
+celda.
+Masa molar:
+$$M_{AX} = 60 + 25$$
+$$M_{AX} = 85$$
+Unidad:
+$$\text{g/mol}$$
+Volumen de
+celda:
+$$V_c = \frac{n \cdot M_{AX}}{\rho \cdot N_A}$$
+$$V_c = \frac{4 \cdot 85}{4,61 \cdot 6,022 \cdot 10^{23}}$$
+$$V_c \approx 1,2247 \cdot 10^{-22}$$
+Unidad:
+$$\text{cm}^3$$
+Parámetro:
+$$a = V_c^{1/3}$$
+$$a \approx 4,966 \cdot 10^{-8}$$
+Unidad:
+$$\text{cm}$$
+$$a = 0,4966$$
+Unidad:
+$$\text{nm}$$
+
+3. Cálculo de
+radios:
+En ZnS se
+tocan en la
+cuarta parte
+de la diagonal
+del cubo:
+$$r_{A^+} + r_{X^-} = \frac{\sqrt{3} \cdot a}{4}$$
+Sustituyendo:
+$$r_{A^+} + 2,4662 \cdot r_{A^+} = \frac{\sqrt{3} \cdot 0,4966}{4}$$
+$$3,4662 \cdot r_{A^+} \approx 0,21503$$
+$$r_{A^+} \approx 0,0620$$
+Unidad:
+$$\text{nm}$$
+Para el anión:
+$$r_{X^-} \approx 2,4662 \cdot 0,0620$$
+$$r_{X^-} \approx 0,1530$$
+Unidad:
+$$\text{nm}$$
+
+#### Apartado b)
+
+1. Área del
+plano {110}:
+$$A_p = \sqrt{2} \cdot a^2$$
+$$A_p = \sqrt{2} \cdot 0,4966^2$$
+$$A_p \approx 0,34874$$
+Unidad:
+$$\text{nm}^2$$
+
+2. Área de
+iones en
+el plano:
+Aniones:
+- 4 esquinas:
+$$4 \cdot 1/4 = 1$$
+- 2 bordes:
+$$2 \cdot 1/2 = 1$$
+Total:
+$$2$$
+aniones.
+Cationes en
+huecos
+tetraédricos
+sobre el
+plano:
+$$2$$
+cationes.
+Área ocupada:
+$$A_{ocup} = 2 \cdot \pi \cdot r_{X^-}^2 + 2 \cdot \pi \cdot r_{A^+}^2$$
+$$A_{ocup} = 2\pi \cdot (0,1530^2 + 0,0620^2)$$
+$$A_{ocup} \approx 0,17124$$
+Unidad:
+$$\text{nm}^2$$
+
+3. Fracción:
+$$FE_s = \frac{A_{ocup}}{A_p}$$
+$$FE_s = \frac{0,17124}{0,34874}$$
+$$FE_s \approx 0,491$$
+Equivale a:
+$$49,1\%$$
+
+#### Apartado c)
+
+1. Empaqueta-
+miento lineal
+aniones:
+Diagonal de
+cara:
+$$L = \sqrt{2} \cdot a$$
+$$L \approx 0,7023$$
+Unidad:
+$$\text{nm}$$
+En esa línea,
+los aniones
+se tocan:
+$$\text{Longitud} = 4 \cdot r_{X^-}$$
+$$\text{Longitud} = 4 \cdot 0,1530$$
+$$\text{Longitud} = 0,6120$$
+Unidad:
+$$\text{nm}$$
+Fracción:
+$$FE_{l,X^-} = \frac{0,6120}{0,7023}$$
+$$FE_{l,X^-} \approx 0,871$$
+Equivale a:
+$$87,1\%$$
+
+2. Empaqueta-
+miento lineal
+cationes:
+En línea de
+cationes:
+$$L_{seg} = \frac{\sqrt{2} \cdot a}{2}$$
+$$L_{seg} \approx 0,3511$$
+Unidad:
+$$\text{nm}$$
+Contiene:
+$$2 \cdot r_{A^+}$$
+ocupados.
+Fracción:
+$$FE_{l,A^+} = \frac{2 \cdot r_{A^+}}{L_{seg}}$$
+$$FE_{l,A^+} = \frac{2 \cdot 0,0620}{0,3511}$$
+$$FE_{l,A^+} \approx 0,353$$
+Equivale a:
+$$35,3\%$$
+
+---
+
+## Ejercicio 3
+
+### Enunciado
+Transcription:
+2.- Un material
+cerámico, que
+se compone de
+un 8% en peso
+de Cr2O3 y de
+un 92% de MgO,
+forma una
+solución sólida
+con una
+estructura
+cristalina tipo
+NaCl donde los
+iones oxígeno
+ocupan la
+totalidad de
+los nudos
+propios de una
+red FCC y los
+cationes se
+sitúan en los
+huecos
+octaédricos.
+¿Cuál es la
+razón de iones
+Mg2+ a iones
+Cr3+?
+¿Qué fracción
+de sitios
+catiónicos
+queda vacante?
+Datos:
+M(Mg) =
+24.31 uma;
+M(Cr) =
+52.00 uma;
+M(O) =
+16.00 uma.
+
+### Solución Paso a Paso
+
+#### Paso 1:
+Cálculo de moles
+en base a
+$$100$$
+Unidad:
+$$\text{g}$$
+de material:
+Masa de Cr2O3:
+$$m_{Cr_2O_3} = 8$$
+Unidad:
+$$\text{g}$$
+Masa de MgO:
+$$m_{MgO} = 92$$
+Unidad:
+$$\text{g}$$
+Pesos
+moleculares:
+$$M_{Cr_2O_3} = 2 \cdot 52,00 + 3 \cdot 16,00$$
+$$M_{Cr_2O_3} = 152,00$$
+Unidad:
+$$\text{g/mol}$$
+$$M_{MgO} = 24,31 + 16,00$$
+$$M_{MgO} = 40,31$$
+Unidad:
+$$\text{g/mol}$$
+Moles:
+$$n_{Cr_2O_3} = \frac{8}{152,00}$$
+$$n_{Cr_2O_3} \approx 0,05263$$
+Unidad:
+$$\text{mol}$$
+$$n_{MgO} = \frac{92}{40,31}$$
+$$n_{MgO} \approx 2,28231$$
+Unidad:
+$$\text{mol}$$
+
+#### Paso 2:
+Moles de cada
+tipo de ion:
+Magnesio:
+$$n_{Mg^{2+}} = n_{MgO}$$
+$$n_{Mg^{2+}} \approx 2,28231$$
+Unidad:
+$$\text{mol}$$
+Cromo:
+$$n_{Cr^{3+}} = 2 \cdot n_{Cr_2O_3}$$
+$$n_{Cr^{3+}} = 2 \cdot 0,05263$$
+$$n_{Cr^{3+}} \approx 0,10526$$
+Unidad:
+$$\text{mol}$$
+Oxígeno:
+$$n_{O^{2-}} = 3 \cdot n_{Cr_2O_3} + n_{MgO}$$
+$$n_{O^{2-}} = 3 \cdot 0,05263 + 2,28231$$
+$$n_{O^{2-}} \approx 2,44020$$
+Unidad:
+$$\text{mol}$$
+
+#### Paso 3:
+Razón de
+iones Mg2+
+a Cr3+:
+$$\text{Razón} = \frac{n_{Mg^{2+}}}{n_{Cr^{3+}}}$$
+$$\text{Razón} = \frac{2,28231}{0,10526}$$
+$$\text{Razón} \approx 21,68$$
+
+#### Paso 4:
+Fracción de
+sitios vacantes:
+Defecto en
+solución:
+Cada 2
+iones de Cr3+
+sustituyen a 3
+iones de Mg2+
+para mantener
+la carga:
+$$\text{vacantes} = n_{Cr_2O_3}$$
+$$n_{vac} \approx 0,05263$$
+Unidad:
+$$\text{mol}$$
+En estructura
+NaCl, el
+número de
+sitios
+catiónicos
+es igual al
+número de
+sitios de
+aniones (O2-):
+$$\text{Sitios} = n_{O^{2-}}$$
+$$\text{Sitios} = 2,44020$$
+Unidad:
+$$\text{mol}$$
+Fracción
+vacante:
+$$f_{vac} = \frac{n_{vac}}{\text{Sitios}}$$
+$$f_{vac} = \frac{0,05263}{2,44020}$$
+$$f_{vac} \approx 0,02157$$
+Equivale a:
+$$2,16\%$$
+
+---
+
+## Ejercicio 4
+
+### Enunciado
+Transcription:
+4.- Una forma
+cristalina de
+la sílice
+(SiO2) tiene
+una celdilla
+unidad cúbica.
+A partir de
+los resultados
+de difracción
+de rayos-X se
+sabe que la
+celda unidad
+tiene una
+arista de
+longitud
+0.700 nm. Si la
+densidad
+medida es de
+2.32 g/cm3,
+¿cuántos iones
+Si4+ y O2- hay
+por celda
+unidad?
+Datos:
+M(Si) =
+28.09 uma;
+M(O) =
+16.00 uma.
+
+### Solución Paso a Paso
+
+#### Paso 1:
+Volumen de
+la celda:
+Arista:
+$$a = 0,700$$
+Unidad:
+$$\text{nm}$$
+$$a = 0,700 \cdot 10^{-7}$$
+Unidad:
+$$\text{cm}$$
+Volumen:
+$$V_c = a^3$$
+$$V_c = (0,700 \cdot 10^{-7})^3$$
+$$V_c \approx 3,43 \cdot 10^{-22}$$
+Unidad:
+$$\text{cm}^3$$
+
+#### Paso 2:
+Masa molar
+de la sílice:
+$$M_{SiO_2} = 28,09 + 2 \cdot 16,00$$
+$$M_{SiO_2} = 60,09$$
+Unidad:
+$$\text{g/mol}$$
+
+#### Paso 3:
+Número de
+unidades por
+celda ($n$):
+Densidad:
+$$\rho = 2,32$$
+Unidad:
+$$\text{g/cm}^3$$
+Fórmula:
+$$n = \frac{\rho \cdot V_c \cdot N_A}{M_{SiO_2}}$$
+Sustituyendo:
+$$n = \frac{2,32 \cdot 3,43 \cdot 10^{-22} \cdot 6,022 \cdot 10^{23}}{60,09}$$
+$$n \approx 7,975$$
+Redondeado:
+$$n \approx 8$$
+
+#### Paso 4:
+Número de
+iones:
+Como hay 8
+unidades de
+SiO2 por
+celda:
+- Iones Si4+:
+$$\text{Si}^{4+} = 8$$
+- Iones O2-:
+$$\text{O}^{2-} = 8 \cdot 2$$
+$$\text{O}^{2-} = 16$$
+
