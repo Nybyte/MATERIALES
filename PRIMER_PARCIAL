@@ -1,0 +1,759 @@
+# Problemas de Examen Primer Parcial
+
+## Índice
+* [Ejercicio 1: Peso Molecular de Teflón y Vulcanización de Copolímero](#ejercicio-1)
+* [Ejercicio 2: Celda Cristalina BCC de Fe, Dislocación y Aleación Fe-Cr](#ejercicio-2)
+* [Ejercicio 3: Defectos Schottky en ZnS con Estructura Esfarelita](#ejercicio-3)
+
+---
+
+## Conceptos Clave
+
+* **Polímeros**:
+  - Peso Mn:
+    $$\bar{M}_n = \frac{\sum w_i}{\sum n_i}$$
+  - Peso Mw:
+    $$\bar{M}_w = \sum x_i \cdot M_i$$
+  - Polidisp.:
+    $$IP = \frac{\bar{M}_w}{\bar{M}_n}$$
+  - Copolím.:
+    $$\frac{n_A}{n_B} = \frac{m_A / M_A}{m_B / M_B}$$
+  - Enlaces
+    cruzados:
+    $$\%\text{ Enlaces} = \frac{2 \cdot n_S}{n_{db}} \cdot 100$$
+* **Estructura**
+  **BCC**:
+  - Relación:
+    $$\sqrt{3} \cdot a = 4 \cdot r$$
+  - Burgers:
+    $$\vec{b} = \frac{a}{2}[111]$$
+    $$\vert{}\vec{b}\vert{} = 2 \cdot r$$
+* **Hume-**
+  **Rothery**:
+  - Solubilidad:
+    $$\%\text{Dif} = \left\vert{}\frac{r_{dis} - r_{sol}}{r_{dis}}\right\vert{} \cdot 100 < 15\%$$
+* **Densidad**:
+  - Celda:
+    $$\rho = \frac{n \cdot M_{prom}}{V_c \cdot N_A}$$
+* **Defectos**:
+  - Esfarelita:
+    $$r_c + r_a = \frac{\sqrt{3} \cdot a}{4}$$
+  - Schottky:
+    $$\text{Defectos} = n_{teor} - n_{real}$$
+
+---
+
+## Ejercicio 1
+
+### Enunciado
+Transcription:
+Problema 1
+(3,5 puntos)
+a. (1,5 puntos)
+Los datos de la
+tabla corres-
+ponden a la
+polimerización
+del politetra-
+fluoroetileno
+(teflón) y se
+han obtenido
+por vía
+experimental.
+Calcular: La
+masa molecular
+promedio másica
+y numérica y el
+índice de
+polidispersión.
+Intervalos y
+pesos:
+10.000-20.000:
+3 g;
+20.000-30.000:
+9 g;
+30.000-40.000:
+15 g;
+40.000-50.000:
+25 g;
+50.000-60.000:
+22 g;
+60.000-70.000:
+14 g;
+70.000-80.000:
+8 g;
+80.000-90.000:
+4 g.
+b. (1 punto)
+Se fabrica un
+copolímero con
+la mitad de
+masa de
+butadieno
+(C4H6) que
+isopreno
+(C4H5CH3).
+Dibuje el
+copolímero
+resultante y
+determine un
+posible esquema
+de su
+estructura,
+teniendo en
+cuenta las
+proporciones
+de partida.
+c. (1 punto)
+Se añaden
+23,45 g de
+azufre (S) a
+1,00 kg de este
+polímero.
+Calcule el
+porcentaje de
+todos los
+enlaces
+cruzados
+posibles que
+representa esa
+cantidad de
+azufre, e
+indica qué
+proceso se
+origina y qué
+polímero
+tendríamos
+antes y
+después de
+añadir el
+azufre.
+Datos:
+M(teflón) =
+100 g/mol;
+M(C4H5CH3) =
+68.13 g/mol;
+M(C4H6) =
+54.10 g/mol;
+M(S) =
+32 g/mol.
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+1. Tabla de
+datos:
+Masa total:
+$$\sum w_i = 100$$
+Unidad:
+$$\text{g}$$
+Moles de cada
+intervalo
+($$n_i = w_i/M_i$$):
+- 10k-20k (15k):
+$$n_1 = 2,000 \cdot 10^{-4}$$
+Unidad:
+$$\text{mol}$$
+- 20k-30k (25k):
+$$n_2 = 3,600 \cdot 10^{-4}$$
+Unidad:
+$$\text{mol}$$
+- 30k-40k (35k):
+$$n_3 = 4,286 \cdot 10^{-4}$$
+Unidad:
+$$\text{mol}$$
+- 40k-50k (45k):
+$$n_4 = 5,556 \cdot 10^{-4}$$
+Unidad:
+$$\text{mol}$$
+- 50k-60k (55k):
+$$n_5 = 4,000 \cdot 10^{-4}$$
+Unidad:
+$$\text{mol}$$
+- 60k-70k (65k):
+$$n_6 = 2,154 \cdot 10^{-4}$$
+Unidad:
+$$\text{mol}$$
+- 70k-80k (75k):
+$$n_7 = 1,067 \cdot 10^{-4}$$
+Unidad:
+$$\text{mol}$$
+- 80k-90k (85k):
+$$n_8 = 0,471 \cdot 10^{-4}$$
+Unidad:
+$$\text{mol}$$
+Suma de moles:
+$$\sum n_i = 2,3134 \cdot 10^{-3}$$
+Unidad:
+$$\text{mol}$$
+
+2. Masa molecular
+másica ($$\bar{M}_w$$):
+$$\bar{M}_w = \sum x_i \cdot M_i$$
+Sustituyendo
+los valores:
+$$\bar{M}_w = 0,03 \cdot 15000 + 0,09 \cdot 25000 + 0,15 \cdot 35000 + 0,25 \cdot 45000 + 0,22 \cdot 55000 + 0,14 \cdot 65000 + 0,08 \cdot 75000 + 0,04 \cdot 85000$$
+$$\bar{M}_w = 450 + 2250 + 5250 + 11250 + 12100 + 9100 + 6000 + 3400$$
+$$\bar{M}_w = 49800$$
+Unidad:
+$$\text{g/mol}$$
+
+3. Masa molecular
+numérica ($$\bar{M}_n$$):
+$$\bar{M}_n = \frac{\sum w_i}{\sum n_i}$$
+$$\bar{M}_n = \frac{100}{2,3134 \cdot 10^{-3}}$$
+$$\bar{M}_n \approx 43226,5$$
+Unidad:
+$$\text{g/mol}$$
+
+4. Índice de
+polidispersión
+($$IP$$):
+$$IP = \frac{\bar{M}_w}{\bar{M}_n}$$
+$$IP = \frac{49800}{43226,5}$$
+$$IP \approx 1,152$$
+
+#### Apartado b)
+
+1. Proporciones y
+relación molar:
+butadieno:
+$$m_{butadieno} = x$$
+isopreno:
+$$m_{isopreno} = 2 \cdot x$$
+Base:
+$$100$$
+Unidad:
+$$\text{g}$$
+de isopreno y
+$$50$$
+Unidad:
+$$\text{g}$$
+de butadieno.
+Moles:
+$$n_{butadieno} = \frac{50}{54,10}$$
+$$n_{butadieno} \approx 0,9242$$
+Unidad:
+$$\text{mol}$$
+$$n_{isopreno} = \frac{100}{68,13}$$
+$$n_{isopreno} \approx 1,4678$$
+Unidad:
+$$\text{mol}$$
+Relación molar:
+$$\frac{n_{isopreno}}{n_{butadieno}} = \frac{1,4678}{0,9242} \approx 1,6$$
+Es un copolímero
+estadístico
+(al azar).
+
+2. Unidades y
+esquema:
+Butadieno (B):
+$$-\text{CH}_2-\text{CH}=\text{CH}-\text{CH}_2-$$
+Isopreno (I):
+$$-\text{CH}_2-\text{C}(\text{CH}_3)=\text{CH}-\text{CH}_2-$$
+Esquema de
+cadena lineal:
+$$\text{-I-I-B-I-B-I-I-B-I-}$$
+
+#### Apartado c)
+
+1. Moles de
+dobles enlaces
+en
+$$1000$$
+Unidad:
+$$\text{g}$$
+de polímero:
+Masa de
+butadieno:
+$$m_B = \frac{1000}{3}$$
+$$m_B \approx 333,33$$
+Unidad:
+$$\text{g}$$
+Masa de
+isopreno:
+$$m_I = \frac{2000}{3}$$
+$$m_I \approx 666,67$$
+Unidad:
+$$\text{g}$$
+Moles:
+$$n_B = \frac{333,33}{54,10}$$
+$$n_B \approx 6,161$$
+Unidad:
+$$\text{mol}$$
+$$n_I = \frac{666,67}{68,13}$$
+$$n_I \approx 9,785$$
+Unidad:
+$$\text{mol}$$
+Total dobles
+enlaces:
+$$n_{db} = 6,161 + 9,785$$
+$$n_{db} = 15,946$$
+Unidad:
+$$\text{mol}$$
+
+2. Moles de
+azufre:
+$$n_S = \frac{23,45}{32}$$
+$$n_S = 0,7328$$
+Unidad:
+$$\text{mol}$$
+Si cada puente
+de azufre
+une 2 dobles
+enlaces:
+$$\text{db mod} = 2 \cdot n_S$$
+$$\text{db mod} = 2 \cdot 0,7328$$
+$$\text{db mod} = 1,4656$$
+Unidad:
+$$\text{mol}$$
+Porcentaje de
+enlaces:
+$$\%\text{ Enlaces} = \frac{1,4656}{15,946} \cdot 100$$
+$$\%\text{ Enlaces} \approx 9,19\%$$
+(Nota: Si
+se asume
+un puente por
+doble enlace,
+sería
+$$4,59\%$$).
+
+3. Proceso y
+propiedades:
+Proceso:
+Vulcanización.
+Antes del
+azufre:
+Elastómero
+termoplástico,
+lineal, viscoso
+y mecánicamente
+débil.
+Después del
+azufre:
+Elastómero
+termoestable,
+red elástica,
+resistente,
+que no fluye
+ni se funde.
+
+---
+
+## Ejercicio 2
+
+### Enunciado
+Transcription:
+Problema 2
+(3 puntos)
+Se tiene un
+cristal de
+hierro a
+temperatura
+ambiente y una
+atmósfera de
+presión, con
+densidad de
+7,87 g/cm3, y
+parámetro
+reticular de
+2,86 A.
+a. (1,5 punto)
+Calcular un
+vector de
+Burgers para
+ese plano, su
+módulo en
+función del
+radio atómico y
+los índices
+cristalográfi-
+cos de la línea
+de la disloca-
+ción. Dibujar
+una celda
+unidad y situar
+el plano de
+deslizamiento,
+el vector de
+Burgers y la
+línea de la
+dislocación.
+b. (0,5 puntos)
+Calcule el
+número de
+coordinación
+en esas
+condiciones del
+cristal de Fe.
+c. (1 punto)
+Si se alea una
+pieza de 30 g
+de Fe con 4 g
+de Cr,
+comprueba si se
+cumple la
+primera regla
+de Hume-Rothery
+y calcula la
+densidad de la
+solución sólida
+obtenida en las
+mismas
+condiciones de
+presión y
+temperatura.
+Datos:
+r(Cr) = 1,25 A;
+M(Fe) =
+55,85 g/mol,
+M(Cr) =
+52,00 g/mol,
+NA =
+6,022*10^23.
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+1. Relación
+geométrica:
+En estructura
+BCC, los átomos
+se tocan en la
+diagonal
+principal:
+$$\sqrt{3} \cdot a = 4 \cdot r$$
+Despejamos el
+radio atómico
+$$r$$:
+$$r = \frac{\sqrt{3} \cdot a}{4}$$
+Sustituimos:
+$$a = 2,86$$
+Unidad:
+$$\text{\AA}$$
+Calculamos:
+$$r = \frac{\sqrt{3} \cdot 2,86}{4}$$
+$$r \approx 1,238$$
+Unidad:
+$$\text{\AA}$$
+
+2. Vector de
+Burgers:
+Deslizamiento
+en BCC ocurre
+en planos
+$$\{110\}$$
+y direcciones
+$$\langle 111 \rangle$$.
+Para plano
+$$(110)$$,
+un vector de
+Burgers es:
+$$\vec{b} = \frac{a}{2}[111]$$
+
+3. Módulo en
+función del
+radio atómico:
+$$\vert{}\vec{b}\vert{} = \frac{a}{2}\sqrt{1^2 + 1^2 + 1^2}$$
+$$\vert{}\vec{b}\vert{} = \frac{\sqrt{3} \cdot a}{2}$$
+Sustituyendo
+$$\sqrt{3} \cdot a = 4 \cdot r$$:
+$$\vert{}\vec{b}\vert{} = \frac{4 \cdot r}{2}$$
+$$\vert{}\vec{b}\vert{} = 2 \cdot r$$
+Cálculo
+numérico:
+$$\vert{}\vec{b}\vert{} = 2 \cdot 1,238$$
+$$\vert{}\vec{b}\vert{} = 2,477$$
+Unidad:
+$$\text{\AA}$$
+
+4. Línea de
+dislocación:
+Para dislocación
+de arista, el
+vector de
+línea
+$$\vec{t}$$
+es perpendicular
+a
+$$\vec{b} = [111]$$
+y a la normal
+$$\vec{n} = (110)$$.
+Producto
+vectorial:
+$$\vec{t} = \vec{b} \times \vec{n}$$
+$$\vec{t} \propto [111] \times [110]$$
+$$\vec{t} = [1,-1,0]$$
+Dirección:
+$$[1\bar{1}0]$$
+
+5. Descripción
+del dibujo:
+- Celda BCC con
+átomos en los 8
+vértices y un
+átomo central.
+- Plano (110):
+plano diagonal
+rectangular
+vertical.
+- Vector b:
+flecha desde
+vértice (0,0,0)
+hasta vértice
+(1,1,1).
+- Línea de
+dislocación t:
+línea en la
+dirección
+$$[1\bar{1}0]$$
+en dicho plano.
+
+#### Apartado b)
+
+En celdas BCC,
+el número de
+coordinación
+indica los
+vecinos más
+cercanos.
+Cada átomo está
+en contacto
+con 8 átomos de
+los vértices.
+Número de
+coordinación = 8
+
+#### Apartado c)
+
+1. Criterio de
+Hume-Rothery:
+La diferencia
+de radios de
+soluto y
+disolvente
+debe ser menor
+al 15%.
+Disolvente
+(Hierro):
+$$r_{Fe} = 1,238$$
+Unidad:
+$$\text{\AA}$$
+Soluto
+(Cromo):
+$$r_{Cr} = 1,25$$
+Unidad:
+$$\text{\AA}$$
+Diferencia
+porcentual:
+$$\%\text{Dif} = \left\vert{}\frac{1,238 - 1,25}{1,238}\right\vert{} \cdot 100$$
+$$\%\text{Dif} \approx 0,97\%$$
+Como
+$$0,97\% < 15\%$$
+se cumple la
+regla de
+tamaño.
+
+2. Densidad de
+la solución
+sólida:
+Estructura BCC:
+$$n = 2$$
+parámetro:
+$$a = 2,86 \cdot 10^{-8}$$
+Unidad:
+$$\text{cm}$$
+Volumen
+celda:
+$$V_c = a^3$$
+$$V_c = (2,86 \cdot 10^{-8})^3$$
+$$V_c \approx 2,3394 \cdot 10^{-23}$$
+Unidad:
+$$\text{cm}^3$$
+Constante de
+Avogadro:
+$$N_A = 6,022 \cdot 10^{23}$$
+Unidad:
+$$\text{at/mol}$$
+Masa molar
+media:
+Calculamos
+moles de Fe:
+$$n_{Fe} = \frac{30}{55,85}$$
+$$n_{Fe} \approx 0,5372$$
+Unidad:
+$$\text{mol}$$
+moles de Cr:
+$$n_{Cr} = \frac{4}{52,00}$$
+$$n_{Cr} \approx 0,0769$$
+Unidad:
+$$\text{mol}$$
+moles totales:
+$$n_{tot} = 0,5372 + 0,0769$$
+$$n_{tot} = 0,6141$$
+Unidad:
+$$\text{mol}$$
+Fracciones
+atómicas:
+$$X_{Fe} = \frac{0,5372}{0,6141}$$
+$$X_{Fe} \approx 0,8748$$
+$$X_{Cr} = \frac{0,0769}{0,6141}$$
+$$X_{Cr} \approx 0,1252$$
+Masa molar
+promedio:
+$$M_{prom} = X_{Fe} \cdot M_{Fe} + X_{Cr} \cdot M_{Cr}$$
+$$M_{prom} = 0,8748 \cdot 55,85 + 0,1252 \cdot 52,00$$
+$$M_{prom} \approx 55,368$$
+Unidad:
+$$\text{g/mol}$$
+Sustituimos:
+$$\rho = \frac{2 \cdot 55,368}{2,3394 \cdot 10^{-23} \cdot 6,022 \cdot 10^{23}}$$
+$$\rho = \frac{110,736}{14,088}$$
+$$\rho \approx 7,86$$
+Unidad:
+$$\text{g/cm}^3$$
+
+---
+
+## Ejercicio 3
+
+### Enunciado
+Transcription:
+Problema 3
+(3,5 puntos)
+Una muestra de
+ZnS (esfalerita)
+tiene una
+densidad de
+2,90 g/cm3,
+calcular:
+a. (1 punto)
+Densidad
+teórica del ZnS
+(esfalerita).
+b. (1,5 puntos)
+La densidad de
+defectos
+Schottky que
+tiene.
+c. (1 punto)
+Determine el
+porcentaje en
+masa que falta
+por cada 1 mol
+de ZnS debido
+a la presencia
+de los defectos
+Schottky
+calculados.
+Datos:
+r(Zn) =
+0,134 nm;
+r(S) =
+0,124 nm;
+M(Zn) =
+65.38 g/mol;
+M(S) =
+32.064 g/mol.
+
+### Solución Paso a Paso
+
+#### Apartado a)
+
+1. Parámetro de
+red ($a$):
+En estructura
+tipo Esfarelita,
+los cationes y
+aniones se
+tocan a la
+cuarta parte de
+la diagonal
+del cubo:
+$$r_{Zn} + r_{S} = \frac{\sqrt{3} \cdot a}{4}$$
+Sustituyendo:
+$$0,134 + 0,124 = \frac{\sqrt{3} \cdot a}{4}$$
+$$0,258 = \frac{\sqrt{3} \cdot a}{4}$$
+$$a = \frac{0,258 \cdot 4}{\sqrt{3}}$$
+$$a \approx 0,59583$$
+Unidad:
+$$\text{nm}$$
+$$a = 0,59583 \cdot 10^{-7}$$
+Unidad:
+$$\text{cm}$$
+
+2. Volumen de
+la celda ($V_c$):
+$$V_c = a^3$$
+$$V_c = (0,59583 \cdot 10^{-7})^3$$
+$$V_c \approx 2,1154 \cdot 10^{-22}$$
+Unidad:
+$$\text{cm}^3$$
+
+3. Densidad
+teórica:
+La celda tipo
+Esfarelita
+tiene:
+$$n = 4$$
+unidades de ZnS.
+Masa molar:
+$$M_{ZnS} = 65,38 + 32,064$$
+$$M_{ZnS} = 97,444$$
+Unidad:
+$$\text{g/mol}$$
+Fórmula:
+$$\rho_{teor} = \frac{n \cdot M_{ZnS}}{V_c \cdot N_A}$$
+$$\rho_{teor} = \frac{4 \cdot 97,444}{2,1154 \cdot 10^{-22} \cdot 6,022 \cdot 10^{23}}$$
+$$\rho_{teor} \approx 3,06$$
+Unidad:
+$$\text{g/cm}^3$$
+
+#### Apartado b)
+
+1. Moles
+de ZnS
+reales:
+Usamos la
+densidad real:
+$$\rho_{real} = 2,90$$
+Unidad:
+$$\text{g/cm}^3$$
+Fórmula:
+$$n_{real} = \frac{\rho_{real} \cdot V_c \cdot N_A}{M_{ZnS}}$$
+Sustituyendo:
+$$n_{real} = \frac{2,90 \cdot 2,1154 \cdot 10^{-22} \cdot 6,022 \cdot 10^{23}}{97,444}$$
+$$n_{real} \approx 3,7912$$
+
+2. Defectos
+Schottky por
+celda:
+Cada celda
+ideal tiene 4
+unidades.
+Defectos:
+$$\text{Defectos} = 4 - 3,7912$$
+$$\text{Defectos} = 0,2088$$
+
+3. Densidad de
+defectos (por
+centímetro
+cúbico):
+$$\text{Densidad} = \frac{0,2088}{V_c}$$
+$$\text{Densidad} = \frac{0,2088}{2,1154 \cdot 10^{-22}}$$
+$$\text{Densidad} \approx 9,87 \cdot 10^{20}$$
+Unidad:
+$$\text{defectos/cm}^3$$
+
+#### Apartado c)
+
+El porcentaje
+de masa que
+falta respecto
+al cristal
+ideal es:
+$$\%\text{ Masa} = \frac{\rho_{teor} - \rho_{real}}{\rho_{teor}} \cdot 100$$
+$$\%\text{ Masa} = \frac{3,06 - 2,90}{3,06} \cdot 100$$
+$$\%\text{ Masa} \approx 5,23\%$$
